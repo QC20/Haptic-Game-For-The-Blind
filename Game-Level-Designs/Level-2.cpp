@@ -1,3 +1,6 @@
+// Different approach to making level design than level 1. 
+// See image in this folder to get an idea of the the level design. 
+
 struct Waypoint {
   int x;
   int y;
