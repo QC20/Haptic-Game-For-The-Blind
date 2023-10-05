@@ -1,0 +1,25 @@
+# Game Logic
+
+**Technical Specifications**: For this project you are asked to program and code an .ino file in embedded C for Arduino. You do not need to generate schematics or anything else but a working piece of code which is able to carry out the specified requirements underneath.
+
+**Game Objective**: The player navigates a predefined map by using a joystick module. If the player movement deviates from the predefined path, the vibrator will go off with increasing intensity as the player position moves further away from the level path. To compensate for this, the player will steer the player position back to the main path. In this way, the player will trial-and-error their way to the finish line to reach the end point and complete the level.  
+
+1. The game has a level map design
+    1. The level map has 3 states; (1) Starting point, (2) Turning point(s), (3) End point.
+    2. This implies that the level design is made up of straight lines and 90 degree turns.
+2. The joystick starts at the starting point position on the level map
+3. The player moves the joystick module, and depending on what direction its moved in
+    1. The updated player position will correspond to the predefined level path and nothing happens and the play can continue to move the joystick module; or 
+    2. The vibrator component activates with an intensity corresponding to the relative distance from the predefined level path, close to the predefined path is lower intensity, and and far from the predefined level path is higher intensity
+4. When the player reaches a turn point, the vibrator needs to quickly vibrate 3 times (150ms intervals) to indicate to the player that they have reached a turn point (to indicate progress)
+5. When the player has completed the entire level map and reaches the end point, the vibrator needs to quickly vibrate 5 times (150ms intervals) to indicate to the player that the player has complete the level.
+
+**Initial Settings**
+
+- Joystick range in X & Y: 0-1024
+- Neural Position X: 343
+- Neutral Position Y: 341
+- Vibrator/LED = D8
+- Joystick Button = D2
+- Joystick X = A0
+- Joystick Y = A1
