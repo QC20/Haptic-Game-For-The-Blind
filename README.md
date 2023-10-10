@@ -1,15 +1,21 @@
 # Haptic Game for the Blind
 
+![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Project-Article-Contents/Inspiration/haptic_joystick_hand.jpeg)
+
 # HapNav
 Welcome to the HapNav Game repository! This project aims to create an engaging and accessible game experience for the blind and visually impaired community. By harnessing the power of Arduino, this innovative game leverages multiple modalities to provide a unique gaming experience. It not only serves as an exciting game but also contributes to the field of accessibility research.
 
 ## HapNav Game Overview
 HapNav challenges players to navigate a predefined map using a joystick module. The objective is to reach the end point of the map while staying on the predefined path. Here's a brief overview of the game:
 
+![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Project-Article-Contents/Inspiration/haptic_joystick_inside.jpeg)
+
 ### Game Objective
 - The player uses a joystick module to navigate a map.
 - If the player deviates from the predefined path, a vibrator activates with increasing intensity as the player moves further away from the path.
 - To succeed, the player must steer back onto the main path, relying on trial-and-error to reach the finish line.
+
+
 
 ## The Big Picture
 This project brings together technology, accessibility, and creativity to make gaming more inclusive. It's designed to be a valuable resource for designers, UX professionals, HCI researchers, and anyone interested in accessible technology. Here's what you'll find in this repository:
