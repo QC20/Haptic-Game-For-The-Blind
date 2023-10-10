@@ -1,1 +1,1 @@
-*Haptic Game for the Blind
+# Haptic Game for the Blind
