@@ -1,0 +1,7 @@
+﻿Name,Quantity,Component
+"U1",1," Arduino uno"
+"M1",1," Vibration Motor"
+"D1N4001 Diode",1," Diode"
+"CCapacitor",1,"0.1 uF Capacitor"
+"TNPN 2N222",1," NPN Transistor (BJT)"
+"R1K Resistor",1,"1 kΩ Resistor"
