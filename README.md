@@ -28,7 +28,7 @@ This project brings together technology, accessibility, and creativity to make g
 
 4. **Joystick Navigation**: The joystick module serves as the primary control mechanism. Players use it to guide their position on the level map. The code ensures that player movements align with the predefined path.
 
-![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Controller-Designs/Thick-Remote-Design/Original-Design-Combined.stl)
+![Click to see the STL files of the Controller](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Controller-Designs/Thick-Remote-Design/Original-Design-Combined.stl)
 
 5. **Vibrator Feedback**: The game employs a vibrator component to provide feedback to the player. Vibrations vary in intensity based on the player's proximity to the predefined path, creating an immersive and tactile experience.
 
