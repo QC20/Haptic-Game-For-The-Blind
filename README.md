@@ -1,7 +1,8 @@
 # Haptic Game for the Blind
 
 ```
-// Representation of a game map level design. 0 represents the level path. 1-5 is increasing vibration intensity as you get further away from the desired path
+// Representation of a game map-level design.
+// 0 represents the level path. 1-5 is increasing vibration intensity as you get further away from the desired path
 
 const int numRows = 25;  // Number of rows in the map
 const int numCols = 25;  // Number of columns in the map
