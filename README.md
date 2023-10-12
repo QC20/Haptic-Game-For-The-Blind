@@ -18,7 +18,7 @@ HapNav challenges players to navigate a predefined map using a joystick module. 
 - If the player deviates from the predefined path, a vibrator activates with increasing intensity as the player moves further away from the path.
 - To succeed, the player must steer back onto the main path, relying on trial-and-error to reach the finish line.
 
-<img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Diagrams/ESP32-Demo_Haptic-Diagram/wiring_diagram.png" width="50px" height="50px">
+<img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Diagrams/ESP32-Demo_Haptic-Diagram/wiring_diagram.png" width="50%" height="50%">
 
 ## The Big Picture
 This project brings together technology, accessibility, and creativity to make gaming more inclusive. It's designed to be a valuable resource for designers, UX professionals, HCI researchers, and anyone interested in accessible technology. Here's what you'll find in this repository:
