@@ -1,5 +1,31 @@
 # Haptic Game for the Blind
 
+
+
+![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Project-Article-Contents/Inspiration/haptic_joystick_hand.jpeg)
+![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/KRG7e.jpeg)
+
+# HapNav
+Welcome to the HapNav Game repository! This project aims to create an engaging and accessible game experience for the blind and visually impaired community. By harnessing the power of Arduino, this innovative game leverages multiple modalities to provide a unique gaming experience. It not only serves as an exciting game but also contributes to the field of accessibility research.
+
+## HapNav Game Overview
+HapNav challenges players to navigate a predefined map using a joystick module. The objective is to reach the end point of the map while staying on the predefined path. Here's a brief overview of the game:
+
+![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Project-Article-Contents/Inspiration/haptic_joystick_inside.jpeg)
+![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/fYYAm.jpeg)
+
+### Game Objective
+- The player uses a joystick module to navigate a map.
+- If the player deviates from the predefined path, a vibrator activates with increasing intensity as the player moves further away from the path.
+- To succeed, the player must steer back onto the main path, relying on trial-and-error to reach the finish line.
+
+![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/ESP32-Demo_Haptic-Diagram/wiring_diagram.png)
+
+## The Big Picture
+This project brings together technology, accessibility, and creativity to make gaming more inclusive. It's designed to be a valuable resource for designers, UX professionals, HCI researchers, and anyone interested in accessible technology. Here's what you'll find in this repository:
+
+1. **Technical Specifications**: This project involves programming an .ino file in embedded C for Arduino. You'll find the code required to create a working game that meets the specified requirements.
+
 ```
 // Representation of a game map-level design.
 // 0 represents the level path. 1-5 is increasing vibration intensity as you get further away from the desired path
@@ -38,31 +64,9 @@ int map[numRows][numCols] = {
 }
 ```
 
-![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Project-Article-Contents/Inspiration/haptic_joystick_hand.jpeg)
-
-# HapNav
-Welcome to the HapNav Game repository! This project aims to create an engaging and accessible game experience for the blind and visually impaired community. By harnessing the power of Arduino, this innovative game leverages multiple modalities to provide a unique gaming experience. It not only serves as an exciting game but also contributes to the field of accessibility research.
-
-## HapNav Game Overview
-HapNav challenges players to navigate a predefined map using a joystick module. The objective is to reach the end point of the map while staying on the predefined path. Here's a brief overview of the game:
-
-![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Project-Article-Contents/Inspiration/haptic_joystick_inside.jpeg)
-
-### Game Objective
-- The player uses a joystick module to navigate a map.
-- If the player deviates from the predefined path, a vibrator activates with increasing intensity as the player moves further away from the path.
-- To succeed, the player must steer back onto the main path, relying on trial-and-error to reach the finish line.
-
-![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/ESP32-Demo_Haptic-Diagram/wiring_diagram.png)
-
-## The Big Picture
-This project brings together technology, accessibility, and creativity to make gaming more inclusive. It's designed to be a valuable resource for designers, UX professionals, HCI researchers, and anyone interested in accessible technology. Here's what you'll find in this repository:
-
-1. **Technical Specifications**: This project involves programming an .ino file in embedded C for Arduino. You'll find the code required to create a working game that meets the specified requirements.
+3. **Level Map Design**: The game features a level map with distinct states, including starting points, turning points, and an end point. The level design consists of straight lines and 90-degree turns, providing a structured and engaging experience.
 
 ![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Game-Level-Designs/Level-2-Visualization.png)
-
-3. **Level Map Design**: The game features a level map with distinct states, including starting points, turning points, and an end point. The level design consists of straight lines and 90-degree turns, providing a structured and engaging experience.
 
 4. **Joystick Navigation**: The joystick module serves as the primary control mechanism. Players use it to guide their position on the level map. The code ensures that player movements align with the predefined path.
 
