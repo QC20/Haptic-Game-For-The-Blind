@@ -11,7 +11,7 @@ Welcome to the HapNav Game repository! This project aims to create an engaging a
 ## HapNav Game Overview
 HapNav challenges players to navigate a predefined map using a joystick module. The objective is to reach the end point of the map while staying on the predefined path. Here's a brief overview of the game:
 
-![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/fYYAm.jpeg {width=40%})
+![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/fYYAm.jpeg)
 
 ### Game Objective
 - The player uses a joystick module to navigate a map.
