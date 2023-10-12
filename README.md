@@ -1,6 +1,12 @@
 # Haptic Game for the Blind
 
 ![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/KRG7e.jpeg)
+
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/KRG7e.jpeg)  |  ![](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Project-Article-Contents/Inspiration/haptic_joystick_hand.jpeg)
+
+
 ![alt-text-1](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/KRG7e.jpeg) ![alt-text-2](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Project-Article-Contents/Inspiration/haptic_joystick_hand.jpeg)
 # HapNav
 Welcome to the HapNav Game repository! This project aims to create an engaging and accessible game experience for the blind and visually impaired community. By harnessing the power of Arduino, this innovative game leverages multiple modalities to provide a unique gaming experience. It not only serves as an exciting game but also contributes to the field of accessibility research.
