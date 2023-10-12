@@ -65,7 +65,7 @@ int map[numRows][numCols] = {
 
 3. **Level Map Design**: The game features a level map with distinct states, including starting points, turning points, and an end point. The level design consists of straight lines and 90-degree turns, providing a structured and engaging experience.
 
-![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Game-Level-Designs/Level-2-Visualization.png | width=50)
+![alt text,50%](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Game-Level-Designs/Level-2-Visualization.png)
 
 4. **Joystick Navigation**: The joystick module serves as the primary control mechanism. Players use it to guide their position on the level map. The code ensures that player movements align with the predefined path.
 
