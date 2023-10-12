@@ -1,5 +1,11 @@
 # Haptic Game for the Blind
 
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+
 ![alt text](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Project-Article-Contents/Inspiration/haptic_joystick_hand.jpeg)
 
 # HapNav
