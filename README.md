@@ -1,7 +1,8 @@
 # Haptic Game for the Blind
+Within the domain of contemporary technology, haptics encompasses the intricate interplay between human tactile interaction and the nuanced feedback produced by computer interfaces. The fundamental endeavor is to authentically replicate real-world stimuli, fostering an immersive and responsive user experience.
 
 # HapNav
-Welcome to the HapNav Game repository! This project aims to create an engaging and accessible game experience for the blind and visually impaired community. By harnessing the power of Arduino, this innovative game leverages multiple modalities to provide a unique gaming experience. It not only serves as an exciting game but also contributes to the field of accessibility research.
+This project aims to create an engaging and accessible game experience for the blind and visually impaired community. By harnessing the power of Arduino, this innovative game leverages multiple modalities to provide a unique gaming experience. It not only serves as an exciting game but also contributes to the field of accessibility research.
 
 ## HapNav Game Overview
 HapNav challenges players to navigate a predefined map using a joystick module. The objective is to reach the end point of the map while staying on the predefined path. Here's a brief overview of the game:
@@ -11,7 +12,7 @@ Current Prototype Iteration            |  Original Prototype Design
 ![](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/KRG7e.jpeg)  |  ![](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Project-Article-Contents/Inspiration/haptic_joystick_hand.jpeg)
 
 
-<div> align="center" <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/fYYAm.jpeg" width="75%" height="75%"> </div>
+<div> align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/fYYAm.jpeg" width="75%" height="75%"> </div>
 
 ### Game Objective
 The objective of the game was to traverse the intricate maze without visual cues. Instead, the intensity of the vibrations will rise or fall, serving as a tactile guide to the player's proximity to the desired path making up the map's level design.
