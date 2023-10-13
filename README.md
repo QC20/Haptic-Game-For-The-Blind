@@ -13,11 +13,14 @@ HapNav presents players with the challenge of navigating a pre-defined map throu
 Here's a brief overview of the game:
 
 ### Game Objective
-The objective of the game was to traverse the intricate maze without visual cues. Instead, the intensity of the vibrations will rise or fall, serving as a tactile guide to the player's proximity to the desired path making up the map's level design.
+The primary aim of the game is to successfully conquer the intricate maze-like level design, all while relying solely on tactile cues and without any visual assistance. The player's progress is determined by the absence of vibrations in the controller. Whenever the player veers off the intended path, the vibration motor responds with varying intensity, offering real-time feedback about their proximity to the desired route that constitutes the map's level design. Upon reaching the end of the level, a triumphant vibration sequence will mark their victory.
 
-- The player uses a joystick module to navigate a map.
-- If the player deviates from the predefined path, a vibrator activates with increasing intensity as the player moves further away from the path.
-- To succeed, the player must steer back onto the main path, relying on trial-and-error to reach the finish line.
+The game unfolds as follows:
+
+- Players utilize a thumbstick or joystick component within the controller to navigate the level map.
+- Through a process of trial and error, players gradually gain an understanding of the map's structure and composition, progressing step by step.
+- In the event of the player straying from the prescribed path, a vibrator activates, intensifying in response to the player's deviation. This prompts the user to adjust their joystick input and steer back onto the desired path, thereby advancing in the game.
+- Success is achieved when the player consistently follows the main path, ultimately triggering the celebratory vibration sequence to signify victory.
 
 
 
