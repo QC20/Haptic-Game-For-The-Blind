@@ -48,13 +48,13 @@ We've devised a haptic vibrational feedback kit, harnessing the motion of an ana
 
 4. **Joystick Navigation**: The joystick module serves as the primary control mechanism. Players use it to guide their position on the level map. The code ensures that player movements align with the predefined path.
 
-![Click to see the STL files of the Controller](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Controller-Designs/Thick-Remote-Design/Original-Design-Combined.stl)
-
 5. **Vibrator Feedback**: The game employs a vibrator component to provide feedback to the player. Vibrations vary in intensity based on the player's proximity to the predefined path, creating an immersive and tactile experience.
 
 6. **Turn Point Indicators**: To aid player progress, the vibrator delivers quick, distinct vibrations when the player reaches a turning point. This feature enhances the player's sense of direction and progress.
 
 7. **End Point Celebration**: Upon successfully completing the level, the game celebrates the player's achievement with a series of quick vibrations, indicating the level's completion.
+
+![Click to see the STL files of the Controller](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Controller-Designs/Thick-Remote-Design/Original-Design-Combined.stl)
 
 ```
 // Representation of a game map-level design.
@@ -93,7 +93,7 @@ int map[numRows][numCols] = {
  [5. 5. 5. 5. 5. 5. 5. 4. 3. 2. 1. 0. 1. 2. 3. 4. 5. 5. 5. 5. 5. 5. 5. 5. 5.]]
 }
 ```
-<img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Game-Level-Designs/Level-2-Visualization.png" width="50%" height="50%">
+<div align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Game-Level-Designs/Level-2-Visualization.png" width="50%" height="50%"> </div>
 
 ## The Big Picture
 This project brings together technology, accessibility, and creativity to make gaming more inclusive. It's designed to be a valuable resource for designers, UX professionals, HCI researchers, and anyone interested in accessible technology. Here's what you'll find in this repository:
