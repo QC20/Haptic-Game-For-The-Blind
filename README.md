@@ -11,7 +11,7 @@ Current Prototype Iteration            |  Original Prototype Design
 ![](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/KRG7e.jpeg)  |  ![](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Project-Article-Contents/Inspiration/haptic_joystick_hand.jpeg)
 
 
-<img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/fYYAm.jpeg" width="75%" height="75%">
+<div> align="center" <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/fYYAm.jpeg" width="75%" height="75%"> </div>
 
 ### Game Objective
 The objective of the game was to traverse the intricate maze without visual cues. Instead, the intensity of the vibrations will rise or fall, serving as a tactile guide to the player's proximity to the desired path making up the map's level design.
