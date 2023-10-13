@@ -14,6 +14,8 @@ Current Prototype Iteration            |  Original Prototype Design
 <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/fYYAm.jpeg" width="75%" height="75%">
 
 ### Game Objective
+The objective of the game was to traverse the intricate maze without visual cues. Instead, the intensity of the vibrations will rise or fall, serving as a tactile guide to the player's proximity to the desired path making up the map's level design.
+
 - The player uses a joystick module to navigate a map.
 - If the player deviates from the predefined path, a vibrator activates with increasing intensity as the player moves further away from the path.
 - To succeed, the player must steer back onto the main path, relying on trial-and-error to reach the finish line.
