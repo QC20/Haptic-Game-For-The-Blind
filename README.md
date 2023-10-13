@@ -20,6 +20,7 @@ The objective of the game was to traverse the intricate maze without visual cues
 - If the player deviates from the predefined path, a vibrator activates with increasing intensity as the player moves further away from the path.
 - To succeed, the player must steer back onto the main path, relying on trial-and-error to reach the finish line.
 
+<div> align="center">
 <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Diagrams/ESP32-Demo_Haptic-Diagram/wiring_diagram.png" width="100%" height="100%">
 
 Below, you'll find the wiring table for reference:
@@ -32,6 +33,7 @@ Below, you'll find the wiring table for reference:
 | D35     | VRY       |       |
 | D14     | SW       |       |
 | D2     |        | IN      |
+</div>
 
 ## The Big Picture
 This project brings together technology, accessibility, and creativity to make gaming more inclusive. It's designed to be a valuable resource for designers, UX professionals, HCI researchers, and anyone interested in accessible technology. Here's what you'll find in this repository:
