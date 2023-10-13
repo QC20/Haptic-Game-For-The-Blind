@@ -24,7 +24,7 @@ The objective of the game was to traverse the intricate maze without visual cues
 
 Below, you'll find the wiring table for reference:
 | ESP32 | Joystick | Vibration Motor |
-| :---         |     :---:      |          ---: |
+| :---         |     :---:      |          :---: |
 | 3V3   | +5V     |     |
 | 5V     |        | VCC      |
 | GND     | GND       | GND      |
