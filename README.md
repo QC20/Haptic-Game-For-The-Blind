@@ -1,18 +1,12 @@
 # Haptic Game for the Blind
-Within the domain of contemporary technology, haptics encompasses the intricate interplay between human tactile interaction and the nuanced feedback produced by computer interfaces. The fundamental endeavor is to authentically replicate real-world stimuli, fostering an immersive and responsive user experience.
+Within the domain of contemporary technology, haptics encompasses the intricate interplay between human tactile interaction and the nuanced feedback produced by computer interfaces. The fundamental endeavor is to authentically replicate real-world stimuli, fostering an immersive and responsive user experience. Drawing inspiration from the vision of crafting accessibility-first experiences for the blind, our objective is to develop a gaming platform that intrinsically prioritizes inclusion for this user demographic.
 
 # HapNav
 This project aims to create an engaging and accessible game experience for the blind and visually impaired community. By harnessing the power of Arduino, this innovative game leverages multiple modalities to provide a unique gaming experience. It not only serves as an exciting game but also contributes to the field of accessibility research.
 
 ## HapNav Game Overview
-HapNav challenges players to navigate a predefined map using a joystick module. The objective is to reach the end point of the map while staying on the predefined path. Here's a brief overview of the game:
-
-Current Prototype Iteration            |  Original Prototype Design
-:-------------------------:|:-------------------------:
-![](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/KRG7e.jpeg)  |  ![](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Project-Article-Contents/Inspiration/haptic_joystick_hand.jpeg)
-
-
-<div> align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/fYYAm.jpeg" width="75%" height="75%"> </div>
+HapNav presents players with the challenge of navigating a pre-defined map through the utilization of a joystick module. The primary goal is to reach the map's endpoint while maintaining a trajectory along the pre-established path. An unintended but valuable outcome for the user is the creation of a mental model that intricately encapsulates the map's level design. This cognitive map empowers them to heighten their spatial awareness within this compact virtual realm. Consequently, it offers an opportunity for the visually impaired to gain new insights and experiences by engaging with this interactive gaming device.
+Here's a brief overview of the game:
 
 ### Game Objective
 The objective of the game was to traverse the intricate maze without visual cues. Instead, the intensity of the vibrations will rise or fall, serving as a tactile guide to the player's proximity to the desired path making up the map's level design.
@@ -20,6 +14,13 @@ The objective of the game was to traverse the intricate maze without visual cues
 - The player uses a joystick module to navigate a map.
 - If the player deviates from the predefined path, a vibrator activates with increasing intensity as the player moves further away from the path.
 - To succeed, the player must steer back onto the main path, relying on trial-and-error to reach the finish line.
+- 
+Current Prototype Iteration            |  Original Prototype Design
+:-------------------------:|:-------------------------:
+![](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/KRG7e.jpeg)  |  ![](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Project-Article-Contents/Inspiration/haptic_joystick_hand.jpeg)
+
+
+<div> align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/fYYAm.jpeg" width="75%" height="75%"> </div>
 
 <div> align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Diagrams/ESP32-Demo_Haptic-Diagram/wiring_diagram.png" width="100%" height="100%">
 
@@ -36,11 +37,12 @@ The objective of the game was to traverse the intricate maze without visual cues
 | D2     |        | IN      |
 </div>
 
-## The Big Picture
-This project brings together technology, accessibility, and creativity to make gaming more inclusive. It's designed to be a valuable resource for designers, UX professionals, HCI researchers, and anyone interested in accessible technology. Here's what you'll find in this repository:
+
+
+## The Setup
+We've devised a haptic vibrational feedback kit, harnessing the motion of an analog joystick. Leveraging the Arduino platform, we can read the analog joystick's input and orchestrate the vibration motor's response, providing tactile feedback directly into the user's hand. The primary objective of this kit is to acquaint users with haptic feedback (through the mode of games), achieved by seamlessly integrating uncomplicated components into a handheld device that interfaces with Arduino. The end result is a portable gadget that imparts vibrational responses in direct correlation to shifts in joystick position.
 
 1. **Technical Specifications**: This project involves programming an .ino file in embedded C for Arduino. You'll find the code required to create a working game that meets the specified requirements.
-
 
 3. **Level Map Design**: The game features a level map with distinct states, including starting points, turning points, and an end point. The level design consists of straight lines and 90-degree turns, providing a structured and engaging experience.
 
@@ -93,6 +95,8 @@ int map[numRows][numCols] = {
 ```
 <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Game-Level-Designs/Level-2-Visualization.png" width="50%" height="50%">
 
+## The Big Picture
+This project brings together technology, accessibility, and creativity to make gaming more inclusive. It's designed to be a valuable resource for designers, UX professionals, HCI researchers, and anyone interested in accessible technology. Here's what you'll find in this repository:
 ## Get Started
 
 If you're ready to dive into this exciting project, follow these steps:
