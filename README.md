@@ -20,9 +20,10 @@ The objective of the game was to traverse the intricate maze without visual cues
 - If the player deviates from the predefined path, a vibrator activates with increasing intensity as the player moves further away from the path.
 - To succeed, the player must steer back onto the main path, relying on trial-and-error to reach the finish line.
 
-<div> align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Diagrams/ESP32-Demo_Haptic-Diagram/wiring_diagram.png" width="100%" height="100%"> </div>
+<div> align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Diagrams/ESP32-Demo_Haptic-Diagram/wiring_diagram.png" width="100%" height="100%">
 
-<div align="center">Below, you'll find the wiring table for reference:
+
+ Below, you'll find the wiring table for reference:
 | ESP32 | Joystick | Vibration Motor |
 | :---         |     :---:      |          :--- |
 | 3V3   | +5V     |     |
