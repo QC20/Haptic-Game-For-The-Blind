@@ -1,6 +1,10 @@
 # Haptic Game for the Blind
 Within the domain of contemporary technology, haptics encompasses the intricate interplay between human tactile interaction and the nuanced feedback produced by computer interfaces. The fundamental endeavor is to authentically replicate real-world stimuli, fostering an immersive and responsive user experience. Drawing inspiration from the vision of crafting accessibility-first experiences for the blind, our objective is to develop a gaming platform that intrinsically prioritizes inclusion for this user demographic.
 
+Current Prototype Iteration            |  Original Prototype Design
+:-------------------------:|:-------------------------:
+![](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/KRG7e.jpeg)  |  ![](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Project-Article-Contents/Inspiration/haptic_joystick_hand.jpeg)
+
 # HapNav
 This project aims to create an engaging and accessible game experience for the blind and visually impaired community. By harnessing the power of Arduino, this innovative game leverages multiple modalities to provide a unique gaming experience. It not only serves as an exciting game but also contributes to the field of accessibility research.
 
@@ -14,10 +18,7 @@ The objective of the game was to traverse the intricate maze without visual cues
 - The player uses a joystick module to navigate a map.
 - If the player deviates from the predefined path, a vibrator activates with increasing intensity as the player moves further away from the path.
 - To succeed, the player must steer back onto the main path, relying on trial-and-error to reach the finish line.
-- 
-Current Prototype Iteration            |  Original Prototype Design
-:-------------------------:|:-------------------------:
-![](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/KRG7e.jpeg)  |  ![](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Project-Article-Contents/Inspiration/haptic_joystick_hand.jpeg)
+
 
 
 <div> align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/fYYAm.jpeg" width="75%" height="75%"> </div>
