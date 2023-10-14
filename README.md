@@ -1,6 +1,16 @@
 # Haptic Game for the Blind
 Within the domain of contemporary technology, haptics encompasses the intricate interplay between human tactile interaction and the nuanced feedback produced by computer interfaces. The fundamental endeavor is to authentically replicate real-world stimuli, fostering an immersive and responsive user experience. Drawing inspiration from the vision of crafting accessibility-first experiences for the blind, our objective is to develop a gaming platform that intrinsically prioritizes inclusion for this user demographic.
 
+- [Haptic Game for the Blind](#haptic-game-for-the-blind)
+- [HapNav](#hapnav)
+  - [HapNav Game Overview](#hapnav-game-overview)
+    - [Game Objective](#game-objective)
+  - [The Setup](#the-setup)
+  - [The Big Picture](#the-big-picture)
+  - [Get Started](#get-started)
+  - [Contribution](#contribution)
+  - [Acknowledgments](#acknowledgments)
+
 Current Prototype Iteration            |  Original Prototype Design
 :-------------------------:|:-------------------------:
 ![](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/KRG7e.jpeg)  |  ![](https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Project-Article-Contents/Inspiration/haptic_joystick_hand.jpeg)
