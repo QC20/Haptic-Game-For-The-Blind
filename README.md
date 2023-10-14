@@ -24,9 +24,9 @@ The game unfolds as follows:
 
 
 
-<div> align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/fYYAm.jpeg" width="75%" height="75%"> </div>
+<div align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/fYYAm.jpeg" width="75%" height="75%"> </div>
 
-<div> align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Diagrams/ESP32-Demo_Haptic-Diagram/wiring_diagram.png" width="100%" height="100%">
+<div align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Diagrams/ESP32-Demo_Haptic-Diagram/wiring_diagram.png" width="100%" height="100%"> </div>
 
 
  Below, you'll find the wiring table for reference:
@@ -58,6 +58,7 @@ We've devised a haptic vibrational feedback kit, harnessing the motion of an ana
 
 7. **End Point Celebration**: Upon successfully completing the level, the game celebrates the player's achievement with a series of quick vibrations, indicating the level's completion.
 
+** Controller Design
 ``` stl
 solid Mesh
   facet normal 0.000000 -0.000000 -1.000000
@@ -16794,7 +16795,7 @@ endsolid Mesh
 
 ```
 
-*** Level Design Concept 1:
+** Level Design Concept 1:
 ```
 // Representation of a game map-level design.
 // 0 represents the level path. 1-5 is increasing vibration intensity as you get further away from the desired path
@@ -16832,7 +16833,7 @@ int map[numRows][numCols] = {
  [5. 5. 5. 5. 5. 5. 5. 4. 3. 2. 1. 0. 1. 2. 3. 4. 5. 5. 5. 5. 5. 5. 5. 5. 5.]]
 }
 ```
-*** Level Design Concept 2
+** Level Design Concept 2
 <div align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Game-Level-Designs/Level-2-Visualization.png" width="50%" height="50%"> </div>
 
 ## The Big Picture
