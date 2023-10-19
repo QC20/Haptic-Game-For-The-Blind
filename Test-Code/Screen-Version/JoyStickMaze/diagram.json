@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 162.24,
+      "left": -8.72,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "board-ili9341-cap-touch",
+      "id": "lcd1",
+      "top": -153.69,
+      "left": -39.78,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-analog-joystick",
+      "id": "joystick1",
+      "top": -87,
+      "left": -186.6,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "lcd1:VCC", "esp:VIN", "red", [ "v11.72", "h-9.32" ] ],
+    [ "lcd1:GND", "esp:GND.2", "black", [ "v19.58", "h-10.2" ] ],
+    [ "lcd1:CS", "esp:D13", "green", [ "v27.43", "h-11.95" ] ],
+    [ "lcd1:D/C", "esp:D12", "green", [ "v29.17", "h-13.71" ] ],
+    [ "lcd1:MOSI", "esp:D23", "green", [ "v30.04", "h150.28", "v204.12", "h-74.14" ] ],
+    [ "lcd1:SCK", "esp:D18", "green", [ "v44", "h130.21", "v174.46", "h-116.01" ] ],
+    [ "lcd1:MISO", "esp:D19", "green", [ "v48.36", "h97.06", "v159.63", "h-114.27" ] ],
+    [ "lcd1:RST", "esp:D4", "green", [ "v57.96", "h136.33", "v152.65", "h-138.69" ] ],
+    [ "lcd1:SCL", "esp:D22", "green", [ "v72.79", "h83.97", "v124.74", "h-56.7" ] ],
+    [ "lcd1:SDA", "esp:D21", "green", [ "v81.51", "h85.71", "v114.27", "h-96.82" ] ],
+    [ "joystick1:GND", "esp:GND.2", "black", [ "v37.17", "h93.59" ] ],
+    [ "joystick1:VCC", "esp:3V3", "red", [ "v191.18", "h123.48" ] ],
+    [ "esp:D34", "joystick1:VERT", "green", [ "v-32.93", "h-220.14" ] ],
+    [ "joystick1:HORZ", "esp:D35", "green", [ "v73.19", "h199.29" ] ]
+  ],
+  "dependencies": {}
+}
