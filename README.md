@@ -1,6 +1,7 @@
 # Haptic Game for the Blind
 Within the domain of contemporary technology, haptics encompasses the intricate interplay between human tactile interaction and the nuanced feedback produced by computer interfaces. The fundamental endeavor is to authentically replicate real-world stimuli, fostering an immersive and responsive user experience. Drawing inspiration from the vision of crafting accessibility-first experiences for the blind, our objective is to develop a gaming platform that intrinsically prioritizes inclusion for this user demographic.
 
+**Table of Content**
 - [Haptic Game for the Blind](#haptic-game-for-the-blind)
 - [HapNav](#hapnav)
   - [HapNav Game Overview](#hapnav-game-overview)
@@ -68,7 +69,7 @@ We've devised a haptic vibrational feedback kit, harnessing the motion of an ana
 
 7. **End Point Celebration**: Upon successfully completing the level, the game celebrates the player's achievement with a series of quick vibrations, indicating the level's completion.
 
-** Controller Design
+**Controller Design**
 ``` stl
 solid Mesh
   facet normal 0.000000 -0.000000 -1.000000
@@ -16805,7 +16806,7 @@ endsolid Mesh
 
 ```
 
-** Level Design Concept 1:
+**Level Design Concept 1:**
 ```
 // Representation of a game map-level design.
 // 0 represents the level path. 1-5 is increasing vibration intensity as you get further away from the desired path
@@ -16843,7 +16844,7 @@ int map[numRows][numCols] = {
  [5. 5. 5. 5. 5. 5. 5. 4. 3. 2. 1. 0. 1. 2. 3. 4. 5. 5. 5. 5. 5. 5. 5. 5. 5.]]
 }
 ```
-** Level Design Concept 2
+**Level Design Concept 2**
 <div align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Game-Level-Designs/Level-2-Visualization.png" width="50%" height="50%"> </div>
 
 ## The Big Picture
