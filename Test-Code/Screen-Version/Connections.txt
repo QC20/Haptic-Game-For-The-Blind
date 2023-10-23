@@ -1,0 +1,19 @@
+Connection to ESP32
+
+ILI9341 Cap Touch
+VCC 	-> 	VIN
+GND		->	GND
+CS		->	D13
+RST 	->	D4
+D/C		->	D12
+MOSI	->	D23
+SCK		->	D18
+MISO	->	D19
+SCL		->	D22
+SDA 	->	D21
+
+Analog Joystick
+VCC 	->	3v3
+VERT/X	->	D34
+HORT/Y	->	D35
+GND		->	GND

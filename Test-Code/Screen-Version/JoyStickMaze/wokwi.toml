@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'path-to-your-firmware.hex'
+elf = 'Test-Code/Screen-Version/JoyStickMaze/Maze.ino'
