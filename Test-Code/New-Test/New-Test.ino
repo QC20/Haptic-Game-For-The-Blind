@@ -8,9 +8,6 @@
 #define TFT_CLK  18  // CLK or SCK pin (GPIO14 on ESP32)
 
 
-
-
-
 #define BLACK 0x0000  // macros for color (16 bit)
 #define NAVY 0x000F
 #define DARKGREEN 0x03E0
@@ -47,6 +44,8 @@ int yValue = 0; // To store value of the Y axis
 int xLast = 0;//store the previous value of x y
 int yLast = 0;//only print out when changes..
 
+
+// Set the initial player starting point
 int x = 16;
 int y = 73;
 
