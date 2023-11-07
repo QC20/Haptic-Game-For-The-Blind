@@ -1,14 +1,32 @@
-#include <Adafruit_ILI9341.h>
-#include <SPI.h>      // Include the SPI library
+/***********************
 
+Created by Jonas Kjeldmand Jensen
+November 2023
+
+Haptic Game for the Blind
+
+***********************/
+
+
+#include <Adafruit_ILI9341.h>
+#include <SPI.h>
+
+// Pin connections for the display (adjust according to your wiring)
 #define TFT_DC 12 // DC or RS pin (GPIO33 on ESP32)
 #define TFT_CS 13 // CS or SS pin (GPIO15 on ESP32)
 #define TFT_RST 4  // Reset pin (GPIO32 on ESP32, optional)
 #define TFT_MOSI 23  // MOSI pin (GPIO13 on ESP32)
 #define TFT_CLK  18  // CLK or SCK pin (GPIO14 on ESP32)
 
+/***********************
+lcd pin  1     2    3    4     5      6    7     8
 
-#define BLACK 0x0000  // macros for color (16 bit)
+e2sp    VIN  GND    15   12     33    23   18     3v3
+
+************************************/
+
+// macros for color (16 bit)
+#define BLACK 0x0000  
 #define NAVY 0x000F
 #define DARKGREEN 0x03E0
 #define DARKCYAN 0x03EF
@@ -44,9 +62,8 @@ int yValue = 0; // To store value of the Y axis
 int xLast = 0;//store the previous value of x y
 int yLast = 0;//only print out when changes..
 
-
 // Set the initial player starting point
-int x = 16;
+int x = 16; 
 int y = 73;
 
 // Wall coordinates
@@ -93,15 +110,12 @@ const int WALL_COORDS[][4] = {
   {107, 108, 107, 136}
 };
 
-
-
-Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC);
+// Create an instance of the ILI9341 display
+Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_RST);
 
 //are we debugging?
 bool Debugging = true;
 bool mazeRed = false;
-
-
 
 void setup() {
 
@@ -111,8 +125,6 @@ void setup() {
  
 
   mazeWalls(YELLOW);
-
-
 }
 
 int readStick() {
@@ -145,9 +157,7 @@ int readStick() {
       result = DIR_LEFT;
     }
   }
-
   return result;
-
 }
 
 void drawPlayer(uint16_t color){
@@ -215,7 +225,6 @@ if (mazeRed){
   }
 }
 
-
 bool wallCollision(int nx, int ny) {
   bool result = false;
   // Check if the next move intersects with a wall
@@ -236,8 +245,6 @@ bool wallCollision(int nx, int ny) {
   return result;
 }
 
-
-
 void mazeWalls(uint16_t color) {
   // Draw the walls of the maze
   for (int i = 0; i < sizeof(WALL_COORDS) / sizeof(WALL_COORDS[0]); i++) {
@@ -248,4 +255,3 @@ void mazeWalls(uint16_t color) {
     tft.drawLine(x1, y1, x2, y2, color);
   }
 }
-

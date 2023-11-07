@@ -33,6 +33,9 @@ The game unfolds as follows:
 - In the event of the player straying from the prescribed path, a vibrator activates, intensifying in response to the player's deviation. This prompts the user to adjust their joystick input and steer back onto the desired path, thereby advancing in the game.
 - Success is achieved when the player consistently follows the main path, ultimately triggering the celebratory vibration sequence to signify victory.
 
+**If you'd like to experiment with the prototype, you can interact with the design using this interactive [wokwi sketch](https://wokwi.com/projects/380777984099163137).**
+
+
 
 
 <div align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/fYYAm.jpeg" width="75%" height="75%"> </div>
