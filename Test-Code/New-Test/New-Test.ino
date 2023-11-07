@@ -1,9 +1,15 @@
-#include <Adafruit_GFX.h>
 #include <Adafruit_ILI9341.h>
+#include <SPI.h>      // Include the SPI library
+
+#define TFT_DC 12 // DC or RS pin (GPIO33 on ESP32)
+#define TFT_CS 13 // CS or SS pin (GPIO15 on ESP32)
+#define TFT_RST 4  // Reset pin (GPIO32 on ESP32, optional)
+#define TFT_MOSI 23  // MOSI pin (GPIO13 on ESP32)
+#define TFT_CLK  18  // CLK or SCK pin (GPIO14 on ESP32)
 
 
-#define TFT_DC 12
-#define TFT_CS 13
+
+
 
 #define BLACK 0x0000  // macros for color (16 bit)
 #define NAVY 0x000F
