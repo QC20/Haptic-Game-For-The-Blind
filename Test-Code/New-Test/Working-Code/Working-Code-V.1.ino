@@ -119,10 +119,9 @@ bool mazeRed = false;
 
 void setup() {
 
-  Serial.begin(115200);
+  Serial.begin(9600);
   while (!Serial);
   tft.begin();
- 
 
   mazeWalls(YELLOW);
 }
@@ -137,23 +136,23 @@ int readStick() {
 
   if (xValue == 0)
   {
-    //down
+    // Move Down
     result = DIR_DWN;
 
   } else if (xValue > 2048)
   {
-    //up
+    // Move Up
     result = DIR_UP;
 
   }
   if (result == DIR_STOP) {
     if (yValue == 0)
     {
-      //right
+      // Move right
       result = DIR_RIGHT;
     } else if (yValue > 2048)
     {
-      //left
+      // Move left
       result = DIR_LEFT;
     }
   }
@@ -218,7 +217,7 @@ if (mazeRed){
 
   // Move the user if allowed
   if (canMove) {
-    //erase last pos..
+    // Delete previous position
     drawPlayer(BLACK);
     x = nextX;
     y = nextY;
@@ -236,7 +235,8 @@ bool wallCollision(int nx, int ny) {
     if (x1 == x2 && x1 == nx && y1 <= ny && y2 >= ny ||
         y1 == y2 && y1 == ny && x1 <= nx && x2 >= nx) {
       result = true;
-      //flash maze walls red..
+
+      // Maze walls blinks red
       mazeWalls(RED);
       mazeRed = true;
       break;
