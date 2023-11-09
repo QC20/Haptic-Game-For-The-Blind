@@ -19,6 +19,9 @@ Current Prototype Iteration            |  Original Prototype Design
 # HapNav
 This project aims to create an engaging and accessible game experience for the blind and visually impaired community. By harnessing the power of Arduino, this innovative game leverages multiple modalities to provide a unique gaming experience. It not only serves as an exciting game but also contributes to the field of accessibility research.
 
+**If you'd like to experiment with the prototype, you can interact with the design using this interactive [wokwi sketch](https://wokwi.com/projects/380777984099163137).**
+
+
 ## HapNav Game Overview
 HapNav presents players with the challenge of navigating a pre-defined map through the utilization of a joystick module. The primary goal is to reach the map's endpoint while maintaining a trajectory along the pre-established path. An unintended but valuable outcome for the user is the creation of a mental model that intricately encapsulates the map's level design. This cognitive map empowers them to heighten their spatial awareness within this compact virtual realm. Consequently, it offers an opportunity for the visually impaired to gain new insights and experiences by engaging with this interactive gaming device.
 Here's a brief overview of the game:
@@ -32,8 +35,6 @@ The game unfolds as follows:
 - Through a process of trial and error, players gradually gain an understanding of the map's structure and composition, progressing step by step.
 - In the event of the player straying from the prescribed path, a vibrator activates, intensifying in response to the player's deviation. This prompts the user to adjust their joystick input and steer back onto the desired path, thereby advancing in the game.
 - Success is achieved when the player consistently follows the main path, ultimately triggering the celebratory vibration sequence to signify victory.
-
-**If you'd like to experiment with the prototype, you can interact with the design using this interactive [wokwi sketch](https://wokwi.com/projects/380777984099163137).**
 
 
 
