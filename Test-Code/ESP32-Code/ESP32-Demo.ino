@@ -13,10 +13,10 @@ float bit_depth = pow(2.0,12); // ADC conversion ratio
 float Rx_offset = 0.0; // offset in x-dir
 float Ry_offset = 0.0; // offset in y-dir
 
-const int buzz_pin = 2;  // corresponds to GPIO2 on ESP32
+const int buzz_pin = 21;  // corresponds to GPIO2 on ESP32
 
 void setup(){ 
-  Serial.begin(115200);
+  Serial.begin(9600);
   pinMode(joy_pins[0],INPUT); // VR_x pin
   pinMode(joy_pins[1],INPUT); // VR_y pin
   pinMode(joy_pins[2],INPUT_PULLUP); // SW pin
