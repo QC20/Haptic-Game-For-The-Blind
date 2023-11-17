@@ -25,6 +25,8 @@
 // For the vibration motor
 #define vibr 21
 
+// Verify by having the built-in LED blink as well
+#define LED_BUILTIN 2
 /***********************
 lcd pin  1     2    3    4     5      6    7     8
 
@@ -127,6 +129,7 @@ void setup() {
   Serial.begin(9600);
   while (!Serial);
   pinMode(vibr, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
   tft.begin();
  
 
@@ -137,7 +140,7 @@ int readStick() {
 
   int result = DIR_STOP;
 
-  // read analog X and Y analog values
+  // read analog X and Y analog values 
   xValue = analogRead(JS_X);
   yValue = analogRead(JS_Y);
 
@@ -251,12 +254,18 @@ bool wallCollision(int nx, int ny) {
 
       // motor vibrates when player collides with wall
       digitalWrite(vibr, 1);
-      delay(1000); 
+      delay(150); 
       digitalWrite(vibr, 0);
-      delay(1000); 
+      delay(150); 
       digitalWrite(vibr, 1);
-      delay(1000);
+      delay(150);
       digitalWrite(vibr, 0);
+
+      // Built-in LED light
+      digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+      delay(500);                       // wait for a second
+      digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+      delay(500);              
 
       break;
     }
