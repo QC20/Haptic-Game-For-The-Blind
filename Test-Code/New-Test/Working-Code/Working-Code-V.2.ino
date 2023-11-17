@@ -1,18 +1,14 @@
 /***********************
-
-Created by Jonas Kjeldmand Jensen
-November 2023
-
-Haptic Game for the Blind
-
+*
+* Created by Jonas Kjeldmand Jensen
+* November 2023
+*
+* Haptic Game for the Blind
+*
 ***********************/
-
-
 
 #include <Adafruit_ILI9341.h>
 #include <SPI.h>
-
-
 
 // Pin connections for the display (adjust according to your wiring)
 // For the screen
@@ -28,6 +24,7 @@ Haptic Game for the Blind
 
 // For the vibration motor
 #define vibr 21
+
 /***********************
 lcd pin  1     2    3    4     5      6    7     8
 
