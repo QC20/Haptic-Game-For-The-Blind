@@ -3,9 +3,6 @@
 * -- using vibration motor + joystick + ESP32 D1 Mini
 *
 * 
-*  by Josh Hrisko | Maker Portal LLC (c) 2021
-* 
-* 
 ***************************************************************************/
 
 int joy_pins[4] = {35,34,14}; // pins being used for joystick
