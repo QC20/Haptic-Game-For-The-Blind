@@ -1,0 +1,12 @@
+***Future things***
+
+* Fix voltage problem when connecting all components 
+* Make code for vibration motor work
+* See if you can have it do different walls around one another to enable different vibration patterns bassed on how much the player deviates from the desired 
+
+
+
+*** Think about things *** 
+
+* Think about how to let the player know they won the game
+* Is it possible to randomize maps? 
