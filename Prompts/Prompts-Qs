@@ -1,0 +1,16 @@
+***Power Voltage Question ***
+Can you help me with a voltage question about a project I am doing with an ESP32. I am making a maze game with a ESP32. I will need to attach a thumb joystick, a vibration motor, a ILI9341 screen. However, it seems they are all sensitive to receive the right voltage - otherwise they will not function correctly. This means there will not be enough VCC's or 3V on the ESP32 board. 
+Therefore, I am in doubt of how I should power all the components including the ESP32 board when it is not powered by the USB from the PC. How would I go about setting up the power correctly for something like this so that all components will receive the correct power?
+
+_ d _ 
+
+*** Q ***
+
+
+
+*** Q ***
+
+
+
+*** Q ***
+
