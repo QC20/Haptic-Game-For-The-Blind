@@ -10,3 +10,8 @@
 
 * Think about how to let the player know they won the game
 * Is it possible to randomize maps? 
+
+
+*** Other things to consider ***
+
+* 
