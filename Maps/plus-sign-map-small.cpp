@@ -3,12 +3,16 @@
 * Created November 2023
 * For the 'Haptic Game for the Blind' Project
 *
-* Map is shaped like a big plus sign
-* Map has 10 movement points between player and walls.
+* Map is shaped like a big plus sign.
+* For user testing, we want to test whether users are able to 
+* discern what shape they are navigating through.
 *
-* It takes approx. 4-5 seconds for the player to move between walls
-* This is considered to be a lot of space
+* Map has 5 movement points between player and walls.
+* It takes approx. 2-3 seconds for the player to move between walls
+* and half if the player is in the middle
 *
+* This is considered to be average distance 
+* Howver, not a tight fit either
 */
 
 
@@ -48,4 +52,5 @@ const int WALL_COORDS[][4] = {
   {80, 80, 120, 80},
   {120, 80, 120, 40},
   {120, 40, 80, 40},
+
   };
