@@ -35,7 +35,7 @@ e2sp    VIN  GND    15   12     33    23   18     3v3
 
 ************************************/
 
-// macros for color (16 bit)
+// Macros for colors to use (16 bit)
 #define BLACK 0x0000  
 #define NAVY 0x000F
 #define DARKGREEN 0x03E0
@@ -56,7 +56,6 @@ e2sp    VIN  GND    15   12     33    23   18     3v3
 #define GREENYELLOW 0xAFE5
 #define PINK 0xF81F
 #define LIME 0x67E0
-
 
 
 #define DIR_STOP 0
@@ -84,28 +83,27 @@ const int WALL_COORDS[][4] = {
   {0, 0, 0, 90},     // left
   // Draw the walls of the maze
   //1st horizontal tube lines
-  {0, 60, 30, 60}, // bottom first tube line
-  {0, 50, 20, 50}, // top first tube line
+  {0, 60, 30, 60},
+  {0, 50, 20, 50},
   // 1st vertical tube lines
-  {20, 50, 20, 25}, // bottom first tube line
-  {30, 60, 30, 35}, // top first tube line
+  {20, 50, 20, 25},
+  {30, 60, 30, 35},
   // 2nd horizontal tube lines
-  {45, 35, 30, 35}, // bottom 2nd tube line
-  {55, 25, 20, 25}, // top 2nd tube line
+  {45, 35, 30, 35}, 
+  {55, 25, 20, 25},
   // 2nd vertical tube lines
-  {55, 50, 55, 25}, // right 2nd tube line
-  {45, 60, 45, 35}, // left 2nd tube line
+  {55, 50, 55, 25},
+  {45, 60, 45, 35},
   // 3nd horizontal tube lines
-  {55, 50, 60, 50}, // right 2nd tube line
-  {45, 60, 70, 60}, // right 2nd tube line
+  {55, 50, 60, 50},
+  {45, 60, 70, 60},
   // 3rd vertical tube lines
-  {70, 60, 70, 25}, // right 2nd tube line
-  {60, 50, 60, 15}, // right 2nd tube line
+  {70, 60, 70, 25},
+  {60, 50, 60, 15},
   // 4th horizontal tube lines
-  {60, 15, 90, 15}, // right 2nd tube line
-  {90, 25, 70, 25}, // right 2nd tube line
+  {60, 15, 90, 15},
+  {90, 25, 70, 25},
   };
-
 
 // Create an instance of the ILI9341 display
 Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_RST);
@@ -167,12 +165,15 @@ void drawPlayer(uint16_t color){
 }
 
 void loop() {
-
+  // Read joystick input to determine buttons pressed
   int buttons = readStick();
-  drawPlayer(WHITE);
-  delay(200);
 
-if (mazeRed){
+  // Draw the player on the screen with a white color
+  drawPlayer(WHITE);
+  delay(200); // Introduce a delay to control the speed of the loop (adjust as needed)
+
+  // If the variable 'mazeRed' is true, draw maze walls in red
+  if (mazeRed) {
       mazeWalls(RED);
   }
 
@@ -214,30 +215,35 @@ if (mazeRed){
     }
   }
 
-  // Move the user if allowed
+  // If the user can move, update the player's position
   if (canMove) {
-    //erase last pos..
+    // Erase the last position by drawing the player in black
     drawPlayer(BLACK);
+    // Update the player's position to the new coordinates
     x = nextX;
     y = nextY;
   }
 }
 
+// Function to check if the next move intersects with a wall
 bool wallCollision(int nx, int ny) {
   bool result = false;
 
-  // Check if the next move intersects with a wall
+  // Iterate through each wall in WALL_COORDS
   for (int i = 0; i < sizeof(WALL_COORDS) / sizeof(WALL_COORDS[0]); i++) {
+    // Extract coordinates of the current wall
     int x1 = WALL_COORDS[i][0];
     int y1 = WALL_COORDS[i][1];
     int x2 = WALL_COORDS[i][2];
     int y2 = WALL_COORDS[i][3];
 
+    // Check if the next move intersects with the current wall
     if (x1 == x2 && x1 == nx && y1 <= ny && y2 >= ny ||
         y1 == y2 && y1 == ny && x1 <= nx && x2 >= nx) {
+      // Set result to true if there is a collision
       result = true;
 
-      //flash maze walls red when player collides with wall
+      //flash maze walls BLUE when player collides with wall
       mazeWalls(BLUE);
       mazeRed = true;
 
@@ -256,28 +262,25 @@ bool wallCollision(int nx, int ny) {
       digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
       delay(500);              
 
+      // Break out of the loop since we found a collision
       break;
     }
   }
+  // Return the final result (true if there is a collision, false otherwise)
   return result;
 }
 
+// Function to draw maze walls on the screen
 void mazeWalls(uint16_t color) {
   // Draw the walls of the maze
   for (int i = 0; i < sizeof(WALL_COORDS) / sizeof(WALL_COORDS[0]); i++) {
+    // Extract coordinates of the current wall
     int x1 = WALL_COORDS[i][0];
     int y1 = WALL_COORDS[i][1];
     int x2 = WALL_COORDS[i][2];
     int y2 = WALL_COORDS[i][3];
-    tft.drawLine(x1, y1, x2, y2, color);
-  }
 
-    // Draw the yellow walls
-  for (int i = 0; i < sizeof(WALL_COORDS) / sizeof(WALL_COORDS[0]); i++) {
-    int x1 = WALL_COORDS[i][0];
-    int y1 = WALL_COORDS[i][1];
-    int x2 = WALL_COORDS[i][2];
-    int y2 = WALL_COORDS[i][3];
-    tft.drawLine(x1, y1, x2, y2, YELLOW);
+    // Draw a line between the two coordinates to represent a wall
+    tft.drawLine(x1, y1, x2, y2, color);
   }
 }
