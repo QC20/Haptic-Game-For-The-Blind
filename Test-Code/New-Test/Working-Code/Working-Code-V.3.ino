@@ -1,10 +1,10 @@
 /***********************
-
-Created by Jonas Kjeldmand Jensen
-November 2023
-
-Haptic Game for the Blind
-
+*
+* Created by Jonas Kjeldmand Jensen
+* November 2023
+*
+* Haptic Game for the Blind
+*
 ***********************/
 
 
@@ -23,17 +23,11 @@ Haptic Game for the Blind
 #define JS_Y 35
 #define JS_BOT 33
 
-// For the vibration motor
-#define vibr 27
+// For the vibration motor pin
+#define motorPin 27
 
 // Verify by having the built-in LED blink as well
 #define LED_BUILTIN 2
-/***********************
-lcd pin  1     2    3    4     5      6    7     8
-
-e2sp    VIN  GND    15   12     33    23   18     3v3
-
-************************************/
 
 // Macros for colors to use (16 bit)
 #define BLACK 0x0000  
@@ -57,30 +51,31 @@ e2sp    VIN  GND    15   12     33    23   18     3v3
 #define PINK 0xF81F
 #define LIME 0x67E0
 
+// Constants representing movement directions for a game or application
+#define DIR_STOP 0   // No movement
+#define DIR_UP 1     // Upward movement
+#define DIR_DOWN 2   // Downward movement
+#define DIR_LEFT 3   // Leftward movement
+#define DIR_RIGHT 4  // Rightward movement
 
-#define DIR_STOP 0
-#define DIR_UP 1
-#define DIR_DWN 2
-#define DIR_LEFT 3
-#define DIR_RIGHT 4
-
-int xValue = 0; // To store value of the X axis
-int yValue = 0; // To store value of the Y axis
-int xLast = 0;//store the previous value of x y
-int yLast = 0;//only print out when changes..
+// Variables for joystick input tracking
+int xValue = 0;   // To store the value of the X-axis
+int yValue = 0;   // To store the value of the Y-axis
+int xLast = 0;    // Store the previous value of X
+int yLast = 0;    // Store the previous value of Y, only print out when changes occur
 
 // Set the initial player starting point
 int x = 5; 
 int y = 55;
 
-// Wall coordinates
+// Wall coordinates making up the map
 const int WALL_COORDS[][4] = {
   //  <->   up   <->   down
   //  0     0     0     0
-  {0, 0, 90, 0},     // top
+  {0, 0, 90, 0}, // top
   {90, 0, 90, 90}, // right
   {0, 90, 90, 90}, // bottom
-  {0, 0, 0, 90},     // left
+  {0, 0, 0, 90}, // left
   // Draw the walls of the maze
   //1st horizontal tube lines
   {0, 60, 30, 60},
@@ -116,7 +111,7 @@ void setup() {
 
   Serial.begin(9600);
   while (!Serial);
-  pinMode(vibr, OUTPUT);
+  pinMode(motorPin, OUTPUT);
   pinMode(LED_BUILTIN, OUTPUT);
   tft.begin();
  
@@ -155,7 +150,7 @@ int readStick() {
 }
 
 // Function to draw a player at the specified coordinates with the given color
-void drawPlayer(uint16_t color){
+void drawPlayer(uint16_t color) {
   // Draw pixels at the center and surrounding positions to create a simple player representation
   tft.drawPixel(x, y  , color); // Center pixel
   tft.drawPixel(x, y-1, color); // Pixel above center
@@ -247,20 +242,20 @@ bool wallCollision(int nx, int ny) {
       mazeWalls(BLUE);
       mazeRed = true;
 
-      // motor vibrates when player collides with wall
-      digitalWrite(vibr, 1);
+      // motor motorPinates when player collides with wall
+      digitalWrite(motorPin, 1);
       delay(150); 
-      digitalWrite(vibr, 0);
+      digitalWrite(motorPin, 0);
       delay(150); 
-      digitalWrite(vibr, 1);
+      digitalWrite(motorPin, 1);
       delay(150);
-      digitalWrite(vibr, 0);
+      digitalWrite(motorPin, 0);
 
       // Built-in LED light
       digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-      delay(500);                       // wait for a second
+      delay(100);                       // wait for a second
       digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-      delay(500);              
+      delay(100);              
 
       // Break out of the loop since we found a collision
       break;

@@ -2,7 +2,8 @@
 Can you help me with a voltage question about a project I am doing with an ESP32. I am making a maze game with a ESP32. I will need to attach a thumb joystick, a vibration motor, a ILI9341 screen. However, it seems they are all sensitive to receive the right voltage - otherwise they will not function correctly. This means there will not be enough VCC's or 3V on the ESP32 board. 
 Therefore, I am in doubt of how I should power all the components including the ESP32 board when it is not powered by the USB from the PC. How would I go about setting up the power correctly for something like this so that all components will receive the correct power?
 
-_ d _ 
+*** Haptic Feedback Patterns ***
+Can you try to come up with five haptic patterns. I will choose which one of them I like best after I have tested them on my ESP32. The pattern will be needed as haptic feedback for a maze game controlled via a thumbstick. If the player move into one of the walls of the maze the maze wall will start to blink and will also be accompanied with a vibration pattern to let the player know they hit the wall. So it will need to be a concise haptic feedback pattern that clearly conveys that an error was made. Can you help me do that please. The pin is 23.
 
 *** Q ***
 
