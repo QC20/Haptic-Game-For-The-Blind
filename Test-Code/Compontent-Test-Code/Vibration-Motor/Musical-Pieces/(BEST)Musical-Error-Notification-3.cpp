@@ -22,10 +22,10 @@ void assertiveErrorNotification() {
   int noteDurations[] = {8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8};
 
   // Play the melody
-  for (int i = 0; i < 12; i++) {
-    int noteDuration = 1000 / noteDurations[i];
+  for (int i = 0; i < 1050; i++) {
+    int noteDuration = 900 / noteDurations[i];
     tone(motorPin, melody[i], noteDuration);
-    delay(noteDuration * 1.1);  // Add a slight pause between notes
+    delay(noteDuration * 1.2);  // Add a slight pause between notes
     noTone(motorPin);  // Turn off the vibration motor
   }
 }
