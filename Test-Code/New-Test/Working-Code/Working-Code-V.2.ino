@@ -27,6 +27,7 @@
 
 // Verify by having the built-in LED blink as well
 #define LED_BUILTIN 2
+
 /***********************
 lcd pin  1     2    3    4     5      6    7     8
 
