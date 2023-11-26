@@ -130,7 +130,7 @@ int readStick() {
   // Check X-axis for up or down
   if (xValue == 0) {
     // Down
-    result = DIR_DWN;
+    result = DIR_DOWN;
   } else if (xValue > 2048) {
     // Up
     result = DIR_UP;
@@ -200,7 +200,7 @@ void loop() {
       // Check if the next move intersects with a wall
       if (wallCollision(nextX, nextY)) canMove = false;
     }
-  } else if (buttons == DIR_DWN) {
+  } else if (buttons == DIR_DOWN) {
     nextY += 1;
     if (nextY < 0 || nextY > 159) { // out of bounds
       canMove = false;

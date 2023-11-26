@@ -148,7 +148,7 @@ int readStick() {
   if (xValue == 0)
   {
     //down
-    result = DIR_DWN;
+    result = DIR_DOWN;
 
   } else if (xValue > 2048)
   {
