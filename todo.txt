@@ -13,5 +13,6 @@
 
 
 *** Other things to consider ***
-
+* Come up with ideas for how to let players know if they are moving in the right direction
+        ** Maybe a buzzer sound can go off with varying sound intensity based on the players x-coordinates (given they win by going left to right)
 * 
