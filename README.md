@@ -56,6 +56,7 @@ The game unfolds as follows:
 | D2     |        | IN      |
 </div>
 
+![game-test-display](https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/33caa78e-4472-49eb-8ccf-6f33a8f5c274)
 
 
 ## The Setup
