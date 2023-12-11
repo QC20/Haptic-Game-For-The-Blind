@@ -59,6 +59,11 @@ The game unfolds as follows:
 ![game-test-display](https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/33caa78e-4472-49eb-8ccf-6f33a8f5c274)
 [Title](game-test-display.mov)
 
+
+https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/168b68b3-4a9b-483a-922d-1a6876dd1e4c
+
+
+
 ## The Setup
 We've devised a haptic vibrational feedback kit, harnessing the motion of an analog joystick. Leveraging the Arduino platform, we can read the analog joystick's input and orchestrate the vibration motor's response, providing tactile feedback directly into the user's hand. The primary objective of this kit is to acquaint users with haptic feedback (through the mode of games), achieved by seamlessly integrating uncomplicated components into a handheld device that interfaces with Arduino. The end result is a portable gadget that imparts vibrational responses in direct correlation to shifts in joystick position.
 
