@@ -31,7 +31,7 @@ The primary aim of the game is to successfully conquer the intricate maze-like l
 
 
 
-<div align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/33caa78e-4472-49eb-8ccf-6f33a8f5c274" width="50%" height="50%"> </div>
+<div align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/33caa78e-4472-49eb-8ccf-6f33a8f5c274" width="125%" height="125%"> </div>
 
 The game unfolds as follows:
 
