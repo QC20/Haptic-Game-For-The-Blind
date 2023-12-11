@@ -16881,19 +16881,6 @@ We would like to express our gratitude to the blind and visually impaired commun
 By contributing to this project, you are not only advancing the world of accessible gaming but also participating in cutting-edge accessibility research. We hope you find this project inspiring and valuable to the designer, UX, HCI, and research communities.
 
 
-<div align="center"> <video src="Game_Maze-Live_Display_Demo.mp4" controls title="Game Maze Display Demontration" width="80%" height="80%"> </div>
-
-
-
-
-
-https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/70b2763d-2292-4534-b6d3-f410045c79f6
-
-
-
-
-
-
-https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/fd4d916e-967b-45d9-bad6-83f3cb691159
+<div align="center"> <video src="https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/70b2763d-2292-4534-b6d3-f410045c79f6" controls title="Game Maze Display Demontration" width="80%" height="80%"> </div>
 
 
