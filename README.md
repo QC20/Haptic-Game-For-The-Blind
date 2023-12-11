@@ -29,7 +29,9 @@ Here's a brief overview of the game:
 ### Game Objective
 The primary aim of the game is to successfully conquer the intricate maze-like level design, all while relying solely on tactile cues and without any visual assistance. The player's progress is determined by the absence of vibrations in the controller. Whenever the player veers off the intended path, the vibration motor responds with varying intensity, offering real-time feedback about their proximity to the desired route that constitutes the map's level design. Upon reaching the end of the level, a triumphant vibration sequence will mark their victory.
 
-<div align="center"> ![game-test-display](https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/33caa78e-4472-49eb-8ccf-6f33a8f5c274)</div>
+
+
+<div align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/33caa78e-4472-49eb-8ccf-6f33a8f5c274" width="50%" height="50%"> </div>
 
 The game unfolds as follows:
 
