@@ -16939,3 +16939,10 @@ By contributing to this project, you are not only advancing the world of accessi
 <div align="center"> <video src="https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/70b2763d-2292-4534-b6d3-f410045c79f6" controls title="Game Maze Display Demontration" width="80%" height="80%"> </div>
 
 
+
+<div align="center"> <video src="https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/ce326c95-b368-4e37-82a2-daf027f6be1e" controls title="Game Maze Display Demontration" width="80%" height="80%"> </div>
+
+
+
+
+
