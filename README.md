@@ -5,8 +5,23 @@ Within the domain of contemporary technology, haptics encompasses the intricate 
 - [Haptic Game for the Blind](#haptic-game-for-the-blind)
 - [HapNav](#hapnav)
   - [HapNav Game Overview](#hapnav-game-overview)
-    - [Game Objective](#game-objective)
+    - [Core Gameplay: Trial-and-Error Learning for Intuitive Mastery](#core-gameplay-trial-and-error-learning-for-intuitive-mastery)
+    - [Mission Design: Skillful Navigation and Spatial Awareness](#mission-design-skillful-navigation-and-spatial-awareness)
+    - [Freedom to Explore: Unconstrained Gaming](#freedom-to-explore-unconstrained-gaming)
+    - [Inclusivity: A New Dimension for Visually Impaired Players](#inclusivity-a-new-dimension-for-visually-impaired-players)
+    - [Analogical Metaphor: Intuitively Navigating a Stylized World](#analogical-metaphor-intuitively-navigating-a-stylized-world)
+    - [Empowering the Visually Impaired: Novel Interaction with Digital Environments](#empowering-the-visually-impaired-novel-interaction-with-digital-environments)
+  - [Game Objective](#game-objective)
   - [The Setup](#the-setup)
+  - [Other Content](#other-content)
+    - [Controller Designs](#controller-designs)
+    - [Music \& Rytms](#music--rytms)
+    - [Vibration Patterns](#vibration-patterns)
+    - [Additional Maps](#additional-maps)
+    - [Help and Guides for Alternative Setups](#help-and-guides-for-alternative-setups)
+      - [Displays](#displays)
+        - [IlI941](#ili941)
+        - [ST7790](#st7790)
   - [The Big Picture](#the-big-picture)
   - [Get Started](#get-started)
   - [Contribution](#contribution)
@@ -23,24 +38,39 @@ This project aims to create an engaging and accessible game experience for the b
 
 
 ## HapNav Game Overview
-HapNav presents players with the challenge of navigating a pre-defined map through the utilization of a joystick module. The primary goal is to reach the map's endpoint while maintaining a trajectory along the pre-established path. An unintended but valuable outcome for the user is the creation of a mental model that intricately encapsulates the map's level design. This cognitive map empowers them to heighten their spatial awareness within this compact virtual realm. Consequently, it offers an opportunity for the visually impaired to gain new insights and experiences by engaging with this interactive gaming device.
-Here's a brief overview of the game:
+HapNav challenges players to navigate a pre-defined map entirely by touch and intuition. Equipped with a joystick module, players rely on a vibration motor for feedback, indicating whether they stay within the intricate pathways of the designated route.
 
-### Game Objective
+### Core Gameplay: Trial-and-Error Learning for Intuitive Mastery
+At the heart of HapNav's gameplay lies a unique trial-and-error approach. As players embark on the journey, they decipher the shapes, bends, and twists of the map, progressively forming an intuitive and detailed mental image.
+
+### Mission Design: Skillful Navigation and Spatial Awareness
+Your primary mission in HapNav is clear: skillfully navigate the map, reaching the endpoint while staying true to the pre-established path. This objective tests your spatial awareness and motor skills, encouraging the development of a deep familiarity with the virtual terrain.
+
+### Freedom to Explore: Unconstrained Gaming
+Unlike many traditional games, HapNav liberates players from health systems, time limits, or other inhibiting factors. The game's core intention is to offer a platform for unrestricted exploration and learning within its two-dimensional world. Rely solely on your mind's image of the map, fostering a sense of freedom as you navigate the virtual landscape.
+
+### Inclusivity: A New Dimension for Visually Impaired Players
+The primary benefit for users lies in the formation of a detailed mental model encapsulating the map's intricacies. HapNav introduces an intriguing element where visually impaired individuals are encouraged to 'see' or cultivate a spatial representation of the map by actively navigating it. This adds a distinctive layer to the gaming experience, enabling users to develop a two-dimensional understanding of the synthetic environment.
+
+### Analogical Metaphor: Intuitively Navigating a Stylized World
+Drawing on an analogical metaphor, HapNav invites players to intuitively 'see' and maneuver through a stylized world, enhancing their ability to construct mental images and navigate with heightened spatial intuition.
+
+### Empowering the Visually Impaired: Novel Interaction with Digital Environments
+The cultivation of a cognitive map empowers players to heighten their spatial awareness within this compact virtual realm. This innovative approach fosters a deeper level of engagement and inclusion for individuals with visual impairments, offering a novel way to interact with and perceive digital environments. Immerse yourself in HapNav's dynamic and immersive gaming experience, where sensory feedback, strategic navigation, and the trial-and-error learning process combine to create a captivating journey. Get ready to experience gaming in a whole new dimension with HapNav.
+
+**Here's a brief overview of the game:**
+
+## Game Objective
 The primary aim of the game is to successfully conquer the intricate maze-like level design, all while relying solely on tactile cues and without any visual assistance. The player's progress is determined by the absence of vibrations in the controller. Whenever the player veers off the intended path, the vibration motor responds with varying intensity, offering real-time feedback about their proximity to the desired route that constitutes the map's level design. Upon reaching the end of the level, a triumphant vibration sequence will mark their victory.
-
-
 
 <div align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/33caa78e-4472-49eb-8ccf-6f33a8f5c274" width="80%" height="80%"> </div>
 
-The game unfolds as follows:
+**The game unfolds as follows:**
 
 - Players utilize a thumbstick or joystick component within the controller to navigate the level map.
 - Through a process of trial and error, players gradually gain an understanding of the map's structure and composition, progressing step by step.
 - In the event of the player straying from the prescribed path, a vibrator activates, intensifying in response to the player's deviation. This prompts the user to adjust their joystick input and steer back onto the desired path, thereby advancing in the game.
 - Success is achieved when the player consistently follows the main path, ultimately triggering the celebratory vibration sequence to signify victory.
-
-
 
 
 <div align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Prototypes-images/ESP32-Prototype/fYYAm.jpeg" width="75%" height="75%"> </div>
@@ -16852,8 +16882,33 @@ int map[numRows][numCols] = {
  [5. 5. 5. 5. 5. 5. 5. 4. 3. 2. 1. 0. 1. 2. 3. 4. 5. 5. 5. 5. 5. 5. 5. 5. 5.]]
 }
 ```
-**Level Design Concept 2**
+**Level Design Concepts**
 <div align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/blob/master/Game-Level-Designs/Level-2-Visualization.png" width="50%" height="50%"> </div>
+
+## Other Content
+
+### Controller Designs
+There needs to be some restructuring for this one.
+
+### Music & Rytms 
+placeholder
+
+### Vibration Patterns 
+Placeholder
+
+### Additional Maps
+placeholder
+
+### Help and Guides for Alternative Setups
+olaceholder 
+
+#### Displays
+
+##### IlI941
+display placeholder 
+
+##### ST7790
+Display placeholder 2
 
 ## The Big Picture
 This project brings together technology, accessibility, and creativity to make gaming more inclusive. It's designed to be a valuable resource for designers, UX professionals, HCI researchers, and anyone interested in accessible technology. Here's what you'll find in this repository:
