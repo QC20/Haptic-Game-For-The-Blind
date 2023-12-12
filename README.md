@@ -5,12 +5,12 @@ Within the domain of contemporary technology, haptics encompasses the intricate 
 - [Haptic Game for the Blind](#haptic-game-for-the-blind)
 - [HapNav](#hapnav)
   - [HapNav Game Overview](#hapnav-game-overview)
-    - [Core Gameplay: Trial-and-Error Learning for Intuitive Mastery](#core-gameplay-trial-and-error-learning-for-intuitive-mastery)
-    - [Mission Design: Skillful Navigation and Spatial Awareness](#mission-design-skillful-navigation-and-spatial-awareness)
-    - [Freedom to Explore: Unconstrained Gaming](#freedom-to-explore-unconstrained-gaming)
-    - [Inclusivity: A New Dimension for Visually Impaired Players](#inclusivity-a-new-dimension-for-visually-impaired-players)
-    - [Analogical Metaphor: Intuitively Navigating a Stylized World](#analogical-metaphor-intuitively-navigating-a-stylized-world)
-    - [Empowering the Visually Impaired: Novel Interaction with Digital Environments](#empowering-the-visually-impaired-novel-interaction-with-digital-environments)
+      - [Core Gameplay: Trial-and-Error Learning for Intuitive Mastery](#core-gameplay-trial-and-error-learning-for-intuitive-mastery)
+      - [Mission Design: Skillful Navigation and Spatial Awareness](#mission-design-skillful-navigation-and-spatial-awareness)
+      - [Freedom to Explore: Unconstrained Gaming](#freedom-to-explore-unconstrained-gaming)
+      - [Inclusivity: A New Dimension for Visually Impaired Players](#inclusivity-a-new-dimension-for-visually-impaired-players)
+      - [Analogical Metaphor: Intuitively Navigating a Stylized World](#analogical-metaphor-intuitively-navigating-a-stylized-world)
+      - [Empowering the Visually Impaired: Novel Interaction with Digital Environments](#empowering-the-visually-impaired-novel-interaction-with-digital-environments)
   - [Game Objective](#game-objective)
   - [The Setup](#the-setup)
   - [Other Content](#other-content)
@@ -40,22 +40,22 @@ This project aims to create an engaging and accessible game experience for the b
 ## HapNav Game Overview
 HapNav challenges players to navigate a pre-defined map entirely by touch and intuition. Equipped with a joystick module, players rely on a vibration motor for feedback, indicating whether they stay within the intricate pathways of the designated route.
 
-### Core Gameplay: Trial-and-Error Learning for Intuitive Mastery
+#### Core Gameplay: Trial-and-Error Learning for Intuitive Mastery
 At the heart of HapNav's gameplay lies a unique trial-and-error approach. As players embark on the journey, they decipher the shapes, bends, and twists of the map, progressively forming an intuitive and detailed mental image.
 
-### Mission Design: Skillful Navigation and Spatial Awareness
+#### Mission Design: Skillful Navigation and Spatial Awareness
 Your primary mission in HapNav is clear: skillfully navigate the map, reaching the endpoint while staying true to the pre-established path. This objective tests your spatial awareness and motor skills, encouraging the development of a deep familiarity with the virtual terrain.
 
-### Freedom to Explore: Unconstrained Gaming
+#### Freedom to Explore: Unconstrained Gaming
 Unlike many traditional games, HapNav liberates players from health systems, time limits, or other inhibiting factors. The game's core intention is to offer a platform for unrestricted exploration and learning within its two-dimensional world. Rely solely on your mind's image of the map, fostering a sense of freedom as you navigate the virtual landscape.
 
-### Inclusivity: A New Dimension for Visually Impaired Players
+#### Inclusivity: A New Dimension for Visually Impaired Players
 The primary benefit for users lies in the formation of a detailed mental model encapsulating the map's intricacies. HapNav introduces an intriguing element where visually impaired individuals are encouraged to 'see' or cultivate a spatial representation of the map by actively navigating it. This adds a distinctive layer to the gaming experience, enabling users to develop a two-dimensional understanding of the synthetic environment.
 
-### Analogical Metaphor: Intuitively Navigating a Stylized World
+#### Analogical Metaphor: Intuitively Navigating a Stylized World
 Drawing on an analogical metaphor, HapNav invites players to intuitively 'see' and maneuver through a stylized world, enhancing their ability to construct mental images and navigate with heightened spatial intuition.
 
-### Empowering the Visually Impaired: Novel Interaction with Digital Environments
+#### Empowering the Visually Impaired: Novel Interaction with Digital Environments
 The cultivation of a cognitive map empowers players to heighten their spatial awareness within this compact virtual realm. This innovative approach fosters a deeper level of engagement and inclusion for individuals with visual impairments, offering a novel way to interact with and perceive digital environments. Immerse yourself in HapNav's dynamic and immersive gaming experience, where sensory feedback, strategic navigation, and the trial-and-error learning process combine to create a captivating journey. Get ready to experience gaming in a whole new dimension with HapNav.
 
 **Here's a brief overview of the game:**
