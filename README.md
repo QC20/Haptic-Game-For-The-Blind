@@ -13,6 +13,7 @@ Within the domain of contemporary technology, haptics encompasses the intricate 
       - [Empowering the Visually Impaired: Novel Interaction with Digital Environments](#empowering-the-visually-impaired-novel-interaction-with-digital-environments)
   - [Game Objective](#game-objective)
   - [The Setup](#the-setup)
+  - [Game Demonstration](#game-demonstration)
   - [Other Content](#other-content)
     - [Controller Designs](#controller-designs)
     - [Music \& Rytms](#music--rytms)
@@ -97,7 +98,7 @@ We've devised a haptic vibrational feedback kit, harnessing the motion of an ana
 
 1. **Technical Specifications**: This project involves programming an .ino file in embedded C for Arduino. You'll find the code required to create a working game that meets the specified requirements.
 
-3. **Level Map Design**: The game features a level map with distinct states, including starting points, turning points, and an end point. The level design consists of straight lines and 90-degree turns, providing a structured and engaging experience.
+3. **Level Map Design**: The game features a level map with distinct states, including starting points, turning points, and an end point. The level design consists of straight lines and 90-degree turns, providing a structured and engaging experience. This repository has three different type map designs that can be used directly, or inspire to other map designs.
 
 | Basic Snake Game | Plus Sign Map | Maze Map |
 | :---         |     :---:      |          ---: |
@@ -110,6 +111,10 @@ We've devised a haptic vibrational feedback kit, harnessing the motion of an ana
 3. **Turn Point Indicators**: To aid player progress, the vibrator delivers quick, distinct vibrations when the player reaches a turning point. This feature enhances the player's sense of direction and progress.
 
 4. **End Point Celebration**: Upon successfully completing the level, the game celebrates the player's achievement with a series of quick vibrations, indicating the level's completion.
+
+## Game Demonstration
+
+
 
 **Controller Design**
 ``` stl
