@@ -168,7 +168,7 @@ void drawPlayer(uint16_t color) {
   tft.drawPixel(x, y-1, color); // Pixel above center
   tft.drawPixel(x-1, y, color); // Pixel to the left of center
   tft.drawPixel(x, y+1, color); // Pixel below center
-  tft.drawPixel(x+1, y, color); // Pixel to the right of center
+  tft.drawPixel(x+1, y, color)  ; // Pixel to the right of center
 }
 
 void loop() {
