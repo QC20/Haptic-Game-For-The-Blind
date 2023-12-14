@@ -1,6 +1,11 @@
 # Haptic Game for the Blind
 Within the domain of contemporary technology, haptics encompasses the intricate interplay between human tactile interaction and the nuanced feedback produced by computer interfaces. The fundamental endeavor is to authentically replicate real-world stimuli, fostering an immersive and responsive user experience. Drawing inspiration from the vision of crafting accessibility-first experiences for the blind, our objective is to develop a gaming platform that intrinsically prioritizes inclusion for this user demographic.
 
+<div align="center"> <video src="https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/ce326c95-b368-4e37-82a2-daf027f6be1e" controls title="Game Maze Display Demontration" width="80%" height="80%"> </div>
+
+
+
+
 **Table of Content**
 - [Haptic Game for the Blind](#haptic-game-for-the-blind)
 - [HapNav](#hapnav)
