@@ -99,7 +99,7 @@ We've devised a haptic vibrational feedback kit, harnessing the motion of an ana
 
 3. **Level Map Design**: The game features a level map with distinct states, including starting points, turning points, and an end point. The level design consists of straight lines and 90-degree turns, providing a structured and engaging experience.
 
-| Left-aligned | Center-aligned | Right-aligned |
+| Basic Snake Game | Plus Sign Map | Maze Map |
 | :---         |     :---:      |          ---: |
 | ![Basic Snake Game](Basic_Snake_Map.png)   | ![Plus Sign Map](Plus_Sign_Map-SMALL.png)    | ![Maze Map](Maze_Map.png)    |
 
