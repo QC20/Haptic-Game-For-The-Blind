@@ -1,7 +1,6 @@
 # Haptic Game for the Blind
 Within the domain of contemporary technology, haptics encompasses the intricate interplay between human tactile interaction and the nuanced feedback produced by computer interfaces. The fundamental endeavor is to authentically replicate real-world stimuli, fostering an immersive and responsive user experience. Drawing inspiration from the vision of crafting accessibility-first experiences for the blind, our objective is to develop a gaming platform that intrinsically prioritizes inclusion for this user demographic.
 
-<div align="center"> <video src="https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/ce326c95-b368-4e37-82a2-daf027f6be1e" controls title="Game Maze Display Demontration" width="80%" height="80%"> </div>
 
 
 
@@ -119,6 +118,7 @@ We've devised a haptic vibrational feedback kit, harnessing the motion of an ana
 
 ## Game Demonstration
 
+<div align="center"> <video src="https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/ce326c95-b368-4e37-82a2-daf027f6be1e" controls title="Game Maze Display Demontration" width="80%" height="80%"> </div>
 
 
 **Controller Design**
@@ -16948,15 +16948,3 @@ We would like to express our gratitude to the blind and visually impaired commun
 ---
 
 By contributing to this project, you are not only advancing the world of accessible gaming but also participating in cutting-edge accessibility research. We hope you find this project inspiring and valuable to the designer, UX, HCI, and research communities.
-
-
-<div align="center"> <video src="https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/70b2763d-2292-4534-b6d3-f410045c79f6" controls title="Game Maze Display Demontration" width="80%" height="80%"> </div>
-
-
-
-<div align="center"> <video src="https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/ce326c95-b368-4e37-82a2-daf027f6be1e" controls title="Game Maze Display Demontration" width="80%" height="80%"> </div>
-
-
-
-
-
