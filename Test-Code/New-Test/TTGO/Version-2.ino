@@ -16,9 +16,9 @@
   #define TFT_BL 4
 
   //For the stick pins
-  #define JS_X 32
-  #define JS_Y 33
-  #define JS_BOT 39
+  #define JS_X 32 # grey wire
+  #define JS_Y 33  # green wire
+  #define JS_BOT 39 # yellow wire
 
   // For the vibration motor pin
   #define motorPin 22
@@ -112,6 +112,11 @@
   // constructor for data object named tft 
   Adafruit_ST7789 tft = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
+  //are we debugging?
+bool Debugging = true;
+bool mazeRed = false;
+
+
   void setup(void) {
     Serial.begin(9600);
     pinMode(TFT_BL, OUTPUT);      // TTGO T-Display enable Backlight pin 4
@@ -124,6 +129,48 @@
     mazeWalls(RED);  // Draw the original red walls
     mazeWalls(YELLOW);  // Draw the additional yellow walls
   }
+
+
+
+// Function to read joystick input and determine direction
+int readStick() {
+  // Initialize the result to stop
+  int result = DIR_STOP;
+  // Read analog X and Y values from joystick
+  xValue = analogRead(JS_X);
+  yValue = analogRead(JS_Y);
+
+  // Check X-axis for up or down
+  if (xValue == 0) {
+    // Down
+    result = DIR_DOWN;
+  } else if (xValue > 2048) {
+    // Up
+    result = DIR_UP;
+  }
+  // If no up or down input, check Y-axis for left or right
+  if (result == DIR_STOP) {
+    if (yValue == 0) {
+      // Left
+      result = DIR_RIGHT;
+    } else if (yValue > 2048) {
+      // Right
+      result = DIR_LEFT;
+    }
+  }
+  // Return the detected direction
+  return result;
+}
+
+// Function to draw a player at the specified coordinates with the given color
+void drawPlayer(uint16_t color) {
+  // Draw pixels at the center and surrounding positions to create a simple player representation
+  tft.drawPixel(x, y  , color); // Center pixel
+  tft.drawPixel(x, y-1, color); // Pixel above center
+  tft.drawPixel(x-1, y, color); // Pixel to the left of center
+  tft.drawPixel(x, y+1, color); // Pixel below center
+  tft.drawPixel(x+1, y, color)  ; // Pixel to the right of center
+}
 
 
 void loop() {
