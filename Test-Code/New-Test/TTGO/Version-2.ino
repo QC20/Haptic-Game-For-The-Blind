@@ -15,8 +15,6 @@
   #define TFT_RST 23
   #define TFT_BL 4
 
-
-
   //For the stick pins
   #define JS_X 32 // Grey wire
   #define JS_Y 33  // Green wire
@@ -104,7 +102,7 @@
     {80, 90, 60, 80},
     {60, 80, 20, 110},
     {80, 40, 30, 90},
-    {20, 80, 60, 50},
+    {20, 90, 60, 50},
     {80, 40, 30, 50},
     {60, 50, 20, 60},
     {20, 60, 20, 40},
@@ -125,13 +123,12 @@
     };
 
 // constructor for data object named tft 
-Adafruit_ST7789 tft = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
-
+ Adafruit_ST7789 tft = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
+//Adafruit_ST7789 tft = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_BL);
 
   //are we debugging?
 bool Debugging = true;
 bool mazeRed = false;
-
 
   void setup(void) {
     Serial.begin(9600);
@@ -144,8 +141,6 @@ bool mazeRed = false;
     mazeWalls(RED);  // Draw the original red walls
     mazeWalls(YELLOW);  // Draw the additional yellow walls
   }
-
-
 
 // Function to read joystick input and determine direction
 int readStick() {

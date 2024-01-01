@@ -1,0 +1,7 @@
+if screen does not work, please refer to this reddit thread for help
+
+Sudden LilyGO display issues are often related to what version of the library you are using.
+You MUST use the library supplied by LilyGO in the GitHub repository, because there is a setup file that chooses your resolution and SPI, vs i8080 parallel, plus frequency.
+
+https://www.reddit.com/r/arduino/comments/176vrd8/ttgo_display_is_not_working_properly/
+https://www.reddit.com/r/esp32/comments/11gd99r/ttgo_tdisplay_no_longer_works_on_new_upload/
