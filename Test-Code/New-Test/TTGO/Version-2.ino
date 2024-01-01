@@ -2,9 +2,9 @@
     TTGO T-Display ST7789 OLED based on Adafruit example
     https://github.com/adafruit/Adafruit-ST7735-Library/blob/master/examples/graphicstest/graphicstest.ino
   **************************************************************************/
+  #include <SPI.h>
   #include <Adafruit_GFX.h>    // Core graphics library
   #include <Adafruit_ST7789.h> // Hardware-specific library for ST7789
-  #include <SPI.h>
   #include "pitches.h"
 
   // pinouts from https://github.com/Xinyuan-LilyGO/TTGO-T-Display
@@ -14,6 +14,8 @@
   #define TFT_DC 16
   #define TFT_RST 23
   #define TFT_BL 4
+
+
 
   //For the stick pins
   #define JS_X 32 // Grey wire
@@ -62,39 +64,69 @@
   int yLast = 0;    // Store the previous value of Y, only print out when changes occur
 
   // Set the initial player starting point
-  int x = 5; 
-  int y = 25;
-
-  // Wall coordinates making up the map
-  const int WALL_COORDS[][4] = {
-    //  <->   up   <->   down
-    //  0     0     0     0
-    {0, 0, 110, 0}, // top
-    {110, 0, 110, 90}, // right
-    {0, 90, 90, 90}, // bottom
-    {0, 0, 0, 90}, // left
-    // Draw the walls of the maze
-
-  // Set the initial player starting point
   int x = 75; 
-  int y = 220;
+  int y = 225;
 
   // Wall coordinates making up the map
   const int WALL_COORDS[][4] = {
     //  <->   up   <->   down
     //  0     0     0     0
-    {10, 10, 140, 10}, // top
+    //  <->   up   <->   down
+    //  0     0     0     0
+    {10, 10, 100, 10}, // top
     {10, 10, 10, 230}, // Left
-    {10, 230, 140, 230}, // bottom
-    {10, 10, 10, 230}, // left
+    {10, 230, 100, 230}, // bottom
+    {100, 10, 100, 230}, // left
     // Draw the walls of the maze
-    {0, 20, 110, 20},
-
+    {70, 230, 70, 220},
+    {80, 230, 80, 190},
+    {81, 230, 81, 190},
+    {80, 210, 60, 210},
+    {70, 220, 20, 220},
+    {50, 220, 50, 200},
+    {50, 200, 70, 200},
+    {80, 190, 40, 190},
+    {40, 190, 40, 210},
+    {40, 210, 30, 210},
+    {20, 220, 20, 170},
+    {30, 210, 30, 180},
+    {20, 170, 50, 170},
+    {30, 180, 60, 180},
+    {60, 180, 60, 160},
+    {60, 160, 40, 120},
+    {50, 170, 50, 160},
+    {50, 160, 30, 110},
+    {40, 120, 50, 120},
+    {30, 110, 50, 110},
+    {50, 120,90, 90},
+    {50, 110, 80, 90},
+    {90, 90, 60, 60},
+    {80, 90, 60, 80},
+    {60, 80, 20, 110},
+    {80, 40, 30, 90},
+    {20, 90, 60, 50},
+    {80, 40, 30, 50},
+    {60, 50, 20, 60},
+    {20, 60, 20, 40},
+    {20, 40, 70, 30},
+    {80, 40, 80, 10},
+    {70, 30, 70, 20},
+    {60, 10, 60, 20},
+    {60, 20, 40, 30},
+    {40, 30, 20, 30},
+    {20, 30, 20, 20},
+    {30, 10, 30, 20},
+    {30, 20, 40, 20},
+    {40, 20, 40, 10},
+    {50, 10, 50, 20},
+    {50, 20, 60, 20},
+    {20, 110, 20, 80},
+    {20, 40, 10, 40},
     };
 
+// constructor for data object named tft 
+Adafruit_ST7789 tft = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
-  // constructor for data object named tft 
-  Adafruit_ST7789 tft = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
   //are we debugging?
 bool Debugging = true;
@@ -104,11 +136,10 @@ bool mazeRed = false;
   void setup(void) {
     Serial.begin(9600);
     pinMode(TFT_BL, OUTPUT);      // TTGO T-Display enable Backlight pin 4
-    pinMode(motorPin, OUTPUT);
-    pinMode(LED_BUILTIN, OUTPUT);
     digitalWrite(TFT_BL, HIGH);   // T-Display turn on Backlight
     tft.init(135, 240);           // Initialize ST7789 240x135
-    Serial.println(F("Initialized"));
+    pinMode(motorPin, OUTPUT);
+    pinMode(LED_BUILTIN, OUTPUT);
 
     mazeWalls(RED);  // Draw the original red walls
     mazeWalls(YELLOW);  // Draw the additional yellow walls
