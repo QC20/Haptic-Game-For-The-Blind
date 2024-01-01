@@ -16,12 +16,12 @@
   #define TFT_BL 4
 
   //For the stick pins
-  #define JS_X 32 # grey wire
-  #define JS_Y 33  # green wire
-  #define JS_BOT 39 # yellow wire
+  #define JS_X 32 // Grey wire
+  #define JS_Y 33  // Green wire
+  #define JS_BOT 39 // Yellow wire
 
   // For the vibration motor pin
-  #define motorPin 22
+  #define motorPin 22 // Purple wire
 
   // Verify by having the built-in LED blink as well
   #define LED_BUILTIN 2
@@ -74,38 +74,22 @@
     {0, 90, 90, 90}, // bottom
     {0, 0, 0, 90}, // left
     // Draw the walls of the maze
-    //1st horizontal tube lines
+
+  // Set the initial player starting point
+  int x = 75; 
+  int y = 220;
+
+  // Wall coordinates making up the map
+  const int WALL_COORDS[][4] = {
+    //  <->   up   <->   down
+    //  0     0     0     0
+    {10, 10, 140, 10}, // top
+    {10, 10, 10, 230}, // Left
+    {10, 230, 140, 230}, // bottom
+    {10, 10, 10, 230}, // left
+    // Draw the walls of the maze
     {0, 20, 110, 20},
-    {0, 30, 30, 30},
-    {10, 30, 10, 70},
-    {10, 70, 30, 70},
-    {30, 70, 30, 90},
-    {30, 90, 90, 90},
-    {90, 90, 90, 30},
-    {90, 30, 50, 30},
-    {50, 30, 50, 70},
-    {110, 20, 110, 90},
-    {110, 90, 100, 90},
-    {70, 50, 30, 50},
-    {70, 90, 70, 70},
-    {70, 70, 90, 70},
-    {40, 20, 40, 40},
-    {40, 40, 20, 40},
-    {20, 40, 20, 60},
-    {20, 60, 40, 60},
-    {40, 60, 40, 80},
-    {40, 80, 60, 80},
-    {60, 80, 60, 60},
-    {60, 60, 80, 60},
-    {80, 60, 80, 40},
-    {80, 40, 60, 40},
-    {100, 20, 100, 30},
-    {100, 30, 110, 30},
-    {90, 40, 100, 40},
-    {100, 50, 110, 50},
-    {90, 60, 100, 60},
-    {100, 70, 110, 70},
-    {90, 80, 100, 80},
+
     };
 
 
