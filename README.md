@@ -1,12 +1,14 @@
 # Haptic Game for the Blind
 Within the domain of contemporary technology, haptics encompasses the intricate interplay between human tactile interaction and the nuanced feedback produced by computer interfaces. The fundamental endeavor is to authentically replicate real-world stimuli, fostering an immersive and responsive user experience. Drawing inspiration from the vision of crafting accessibility-first experiences for the blind, our objective is to develop a gaming platform that intrinsically prioritizes inclusion for this user demographic.
 
-
+## Prototype Contents
+Placeholder
 
 
 
 **Table of Content**
 - [Haptic Game for the Blind](#haptic-game-for-the-blind)
+  - [Prototype Contents](#prototype-contents)
 - [HapNav](#hapnav)
   - [HapNav Game Overview](#hapnav-game-overview)
       - [Core Gameplay: Trial-and-Error Learning for Intuitive Mastery](#core-gameplay-trial-and-error-learning-for-intuitive-mastery)
