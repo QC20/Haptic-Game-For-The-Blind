@@ -16911,7 +16911,7 @@ placeholder
 Placeholder
 
 ### Additional Maps
-placeholder
+In the [map folder](https://github.com/QC20/Haptic-Game-For-The-Blind/tree/master/Game-Level-Designs) thej
 
 ### Help and Guides for Alternative Setups
 olaceholder 
