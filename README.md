@@ -16911,7 +16911,7 @@ placeholder
 Placeholder
 
 ### Additional Maps
-In the [map folder](https://github.com/QC20/Haptic-Game-For-The-Blind/tree/master/Game-Level-Designs) thej
+Explore additional map designs in the [Map Folder](https://github.com/QC20/Haptic-Game-For-The-Blind/tree/master/Game-Level-Designs). The designs vary, including mazes and maps with start and end points, in different sizes. Some are tailored for the TTGO T-display ESP32 Dev Board (125x240 dimensions). Feel free to use these maps for experimentation and variety. Consider extending the script to randomly select maps or use them as succeeding levels, although this feature is not currently implemented in the current game version.
 
 ### Help and Guides for Alternative Setups
 olaceholder 
