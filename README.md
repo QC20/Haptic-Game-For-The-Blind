@@ -16902,7 +16902,7 @@ int map[numRows][numCols] = {
 ## Other Content
 
 ### Controller Designs
-There needs to be some restructuring for this one.
+Visit the [Controller Designs](https://github.com/QC20/Haptic-Game-For-The-Blind/tree/master/Controller-Designs) folder for diverse versions and types of experimental controller designs used Throughout this project. Ranging from larger to more compact, these designs offer a valuable starting point for incorporating additional features to accommodate diverse needs. All the designs available in this repo are all original designs done by the author. 
 
 ### Music & Rytms 
 placeholder
