@@ -1,6 +1,17 @@
 import random
 
 def generate_random_map(width, height):
+    """
+    Generates a random maze-like map with walls that a player can navigate through.
+
+    Parameters:
+    - width (int): The width of the map.
+    - height (int): The height of the map.
+
+    Returns:
+    - str: A formatted string containing wall coordinates for the generated map.
+    """
+
     # Set the initial player starting point
     x = 100
     y = 85
@@ -14,13 +25,13 @@ def generate_random_map(width, height):
     ]
 
     # Draw the walls of the maze
-    for _ in range(10):  # Adjust the number of walls as needed
+    for _ in range(20):  # Adjust the number of walls as needed
         x_end = random.randint(0, width - 1)
         y_end = random.randint(0, height - 1)
         wall_coords.append([x, y, x_end, y_end])
         x = x_end
         y = y_end
-    
+
     # Connect the last point to the starting point to form a closed loop
     wall_coords.append([x, y, 100, 85])
 
