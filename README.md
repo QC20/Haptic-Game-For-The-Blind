@@ -1,7 +1,7 @@
 # Haptic Game for the Blind
 Within the domain of contemporary technology, haptics encompasses the intricate interplay between human tactile interaction and the nuanced feedback produced by computer interfaces. The fundamental endeavor is to authentically replicate real-world stimuli, fostering an immersive and responsive user experience. Drawing inspiration from the vision of crafting accessibility-first experiences for the blind, our objective is to develop a gaming platform that intrinsically prioritizes inclusion for this user demographic.
 
-### Prototype Parts Contents
+#### Prototype Parts Contents
 - 3D Printed (PLA) Remote Controller Prototype Case
 - LiLyGo TTGO T-Display 16 MB ESP32
 - Analog 2-Axis JoyStick with Momentary Pushbutton Switch
@@ -12,9 +12,9 @@ Within the domain of contemporary technology, haptics encompasses the intricate 
 - Jumper Wire Cables 
 
 
-**Table of Content**
+## Table of Contents
 - [Haptic Game for the Blind](#haptic-game-for-the-blind)
-    - [Prototype Parts Contents](#prototype-parts-contents)
+      - [Prototype Parts Contents](#prototype-parts-contents)
 - [HapNav](#hapnav)
   - [HapNav Game Overview](#hapnav-game-overview)
       - [Core Gameplay: Trial-and-Error Learning for Intuitive Mastery](#core-gameplay-trial-and-error-learning-for-intuitive-mastery)
