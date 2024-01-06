@@ -12,7 +12,7 @@ void loop() {
   // Pattern: Quick Assertive Error Notification
   quickAssertiveErrorNotification();
 
-  delay(2000);  // Pause between patterns
+  delay(250);  // Pause between patterns
 }
 
 void quickAssertiveErrorNotification() {

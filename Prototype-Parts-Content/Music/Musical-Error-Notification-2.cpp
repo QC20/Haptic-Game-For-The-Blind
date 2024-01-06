@@ -10,7 +10,7 @@ void loop() {
   // Assertive Error Notification
   assertiveErrorNotification();
 
-  delay(2000);  // Pause between patterns
+  delay(250);  // Pause between patterns
 }
 
 void assertiveErrorNotification() {

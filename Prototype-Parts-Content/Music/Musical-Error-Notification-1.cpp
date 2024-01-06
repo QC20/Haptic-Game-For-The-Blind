@@ -10,7 +10,7 @@ void loop() {
   // Pattern xx: Musical Error Notification
   musicalErrorNotification();
 
-  delay(2000);  // Pause between patterns
+  delay(250);  // Pause between patterns
 }
 
 void musicalErrorNotification() {

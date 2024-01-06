@@ -12,7 +12,7 @@ void loop() {
   // Pattern: Quick and Harsh Error Notification
   quickHarshErrorNotification();
 
-  delay(2000);  // Pause between patterns
+  delay(250);  // Pause between patterns
 }
 
 void quickHarshErrorNotification() {

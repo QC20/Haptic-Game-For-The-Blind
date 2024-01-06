@@ -52,7 +52,6 @@ This project aims to create an engaging and accessible game experience for the b
 
 **If you'd like to experiment with the prototype, you can interact with the design using this interactive [wokwi sketch](https://wokwi.com/projects/380777984099163137).**
 
-
 ## HapNav Game Overview
 HapNav challenges players to navigate a pre-defined map entirely by touch and intuition. Equipped with a joystick module, players rely on a vibration motor for feedback, indicating whether they stay within the intricate pathways of the designated route.
 
