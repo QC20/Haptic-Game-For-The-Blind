@@ -96,7 +96,7 @@ width = 110
 height = 90
 random_map = generate_random_map(width, height, num_walls=20, start_x=80, start_y=60)
 
-# Print the generated map
+# Print the generated map       
 print("// Set the initial player starting point")
 print("int x = 80;")
 print("int y = 60;\n")
