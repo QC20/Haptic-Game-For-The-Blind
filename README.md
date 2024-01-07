@@ -16914,11 +16914,11 @@ int map[numRows][numCols] = {
 ### Controller Designs
 Visit the [Controller Designs](https://github.com/QC20/Haptic-Game-For-The-Blind/tree/master/Controller-Designs) folder for diverse versions and types of experimental controller designs used Throughout this project. Ranging from larger to more compact, these designs offer a valuable starting point for incorporating additional features to accommodate diverse needs. All the designs available in this repo are all original designs done by the author. 
 
-### Music & Rytms 
+### Music & Rythms 
 placeholder
 
 ### Vibration Patterns 
-Placeholder
+In the [Vibration Pattern](https://github.com/QC20/Haptic-Game-For-The-Blind/Prototype-Parts-Content/Vibrator-Motor/Vibrator-Motor-Code) folder, you'll find a range of different vibration patterns you can use to spice up for project. For the current project, the main haptic feedback is an error message. Thus, many designs have gone the route of being short and harsh vibration patterns to help denote something went wrong. However, there are other more advanced patterns as well to play around with. In the making of these patterns, I have heavily made use of the [Pitches.h library](https://gist.github.com/mikeputnam/2820675) to create more advanced haptic melodies. Feel free to use the existing files as templates for your own sounds. The breadth at which you are able to make interesting and novel vibration melodies is quite impressive.  
 
 ### Additional Maps
 Explore additional map designs in the [Map Folder](https://github.com/QC20/Haptic-Game-For-The-Blind/tree/master/Game-Level-Designs). The designs vary, including mazes and maps with start and end points, in different sizes. Some are tailored for the TTGO T-display ESP32 Dev Board (125x240 dimensions). Feel free to use these maps for experimentation and variety. Consider extending the script to randomly select maps or use them as succeeding levels, although this feature is not currently implemented in the current game version. Additionally, please see the [Random Map & Maze Generator](https://github.com/QC20/Haptic-Game-For-The-Blind/tree/master/Game-Level-Designs/Mazes/Random-Maze-Generator) folder for code scripts able to auto generate simple map designs.
@@ -16933,6 +16933,10 @@ display placeholder
 
 ##### ST7790
 Display placeholder 2
+
+
+<div align="center"> <video src="Screen_Demo-(v.3).mp4" controls title="Screen version with the ESP32 TTGO running in a ST7790 Display " width="80%" height="80%"> </div>
+
 
 ## The Big Picture
 This project brings together technology, accessibility, and creativity to make gaming more inclusive. It's designed to be a valuable resource for designers, UX professionals, HCI researchers, and anyone interested in accessible technology. Here's what you'll find in this repository:

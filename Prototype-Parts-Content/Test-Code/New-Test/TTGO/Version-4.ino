@@ -256,7 +256,7 @@ bool wallCollision(int nx, int ny) {
       // Pattern: Quick and Harsh Error Notification
       musicalErrorNotification();
 
-      delay(250);  // Pause between patterns
+      delay(500);  // Pause between patterns
 
       // Built-in LED light
       digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
