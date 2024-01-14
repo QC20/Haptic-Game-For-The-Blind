@@ -16914,7 +16914,7 @@ int map[numRows][numCols] = {
 ### Controller Designs
 Visit the [Controller Designs](https://github.com/QC20/Haptic-Game-For-The-Blind/tree/master/Controller-Designs) folder for diverse versions and types of experimental controller designs used Throughout this project. Ranging from larger to more compact, these designs offer a valuable starting point for incorporating additional features to accommodate diverse needs. All the designs available in this repo are all original designs done by the author. 
 
-### Music & Rythms 
+### Music & Rythms
 In the scenario where you desire to incorporate sonic feedback, similar to the vibration patterns, there is a variety of novel melodies available for selection. It's worth noting that these melodies are also compatible with the vibration motor, yielding satisfactory results, although some nuances may be lost. In the current prototype version, a speaker hasn't been included in the build. However, it's a potential future addition to the project, aligning with the concept of creating a game for blind individuals. This addition could assist them in gaining insights into their relative position on the game map through auditory cues. Speculatively, I envision using the pushdown button on the thumbstick to activate a sound that increases in intensity, tone, pitch, etc., depending on whether the player is getting closer to or farther away from the end goal. Metaphorically, this concept resembles a 'Hot or Cold' game, where the player's position relative to the X-axis determines their proximity to victory.
 
 ### Vibration Patterns 
@@ -16927,12 +16927,14 @@ Explore additional map designs in the [Map Folder](https://github.com/QC20/Hapti
 olaceholder 
 
 #### Displays
+This repository comprises functional code, appropriate libraries, and user guides detailing the usage of two distinct displays. Given that the ultimate design is screen-less, the primary purpose of incorporating a screen is mainly for testing during the design phases.
 
 ##### IlI941
-display placeholder 
+The ILI941 displays are usually standalone components, commonly employed for scenarios where displays need to be positioned at a considerable distance from the microcontroller.
 
 ##### ST7790
-Display placeholder 2
+The LilyGO T-Display ESP32 features the ST7790 display. In response, I have implemented a code modification allowing utilization of the microcontroller's on-board screen. This adjustment serves to streamline the assembly of the HapNav during rapid prototyping and development, requiring less space and fewer wires and GPIOs. Despite these optimizations, developers retain access to a visual representation of the game.
+Additionally, the display can be effortlessly deactivated when visual feedback becomes unnecessary. This feature proves beneficial when the device's lid is closed, preventing the player from receiving visual cues. Consequently, power consumption is reduced during periods when visual feedback is not essential.
 
 
 <div align="center"> <video src="Screen_Demo-(v.3).mp4" controls title="Screen version with the ESP32 TTGO running in a ST7790 Display " width="80%" height="80%"> </div>
