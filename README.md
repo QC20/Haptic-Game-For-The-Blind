@@ -80,7 +80,7 @@ The primary aim of the game is to successfully conquer the intricate maze-like l
 
 <div align="center"> <img src="https://github.com/QC20/Haptic-Game-For-The-Blind/assets/36644388/33caa78e-4472-49eb-8ccf-6f33a8f5c274" width="80%" height="80%"> </div>
 
-**The game unfolds as follows:**
+**The game progresses as follows:**
 
 - Players utilize a thumbstick or joystick component within the controller to navigate the level map.
 - Through a process of trial and error, players gradually gain an understanding of the map's structure and composition, progressing step by step.
