@@ -1,5 +1,5 @@
 # Haptic Game for the Blind
-Within the domain of contemporary technology, haptics encompasses the intricate interplay between human tactile interaction and the nuanced feedback produced by computer interfaces. The fundamental endeavor is to authentically replicate real-world stimuli, fostering an immersive and responsive user experience. Drawing inspiration from the vision of crafting accessibility-first experiences for the blind, our objective is to develop a gaming platform that intrinsically prioritizes inclusion for this user demographic.
+Within the domain of contemporary technology, haptics encompasses the intricate interplay between human tactile interaction and the nuanced feedback produced by computer interfaces. The fundamental endeavor of this project is to authentically replicate real-world stimuli, fostering an immersive and responsive user experience. Drawing inspiration from the vision of crafting accessibility-first experiences for the blind, our objective is to develop a gaming platform that intrinsically prioritizes inclusion for this user demographic.
 
 #### Prototype Parts Contents
 - 3D Printed (PLA) Remote Controller Prototype Case
